@@ -1,0 +1,499 @@
+/* main fonts */
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto|Satisfy');
+html, body {
+  font-family: 'Roboto', 'sans-serif';
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4 {
+  margin:0;
+  padding:0;
+}
+
+.h1{
+  font-size: 35px;
+}
+.h2{
+  font-size:25px;
+  margin:4px;
+  margin-bottom: 10px;
+
+}
+.h3{
+  font-size: 20px;
+  margin:5px;
+
+}
+.h4{
+  font-family: Satisfy;
+  font-size:30px;
+  margin:3px;
+  text-shadow: 0 0 4px #E8780C;
+  margin-top:10px;
+  font-weight: lighter;
+
+}
+.h5{
+  font-size: 15px;
+  margin:3px;
+}
+/*main layout*/
+.gf-layout{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+
+/*headers*/
+.p-header{
+  display:flex;
+  background-color: #3B4E7F;
+  width:100%;
+  color:white;
+
+}
+
+.c-header1{
+  display:flex;
+
+}
+
+
+.c-header2{
+  display:flex;
+
+
+}
+
+.gc-eurologo{
+  margin-left:5px;
+  margin-top:4px;
+  border-style:solid;
+  border-radius: 5px;
+  margin-right:10px;
+  height:65px;
+
+
+}
+
+.gc-logotitle{
+
+
+
+}
+/* navigation bar*/
+.p-mainmenu{
+  list-style-type: none;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #77797F;
+  color:white;
+  height:70px;
+  width:100%;
+  font-family: 'Roboto', 'sans-serif';
+  border-top-style:solid;
+  border-top-width:10px;
+  border-top-color:#E8700C;
+  margin:0;
+
+}
+
+.c-mainmenuitems{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width:16%;
+  align-items: center;
+  position:relative;
+}
+
+
+.c-mainmenuitems .dropdown:hover .gc-dropdown-content {
+  display: block;
+}
+
+li a, .gc-dropbtn {
+  display:flex;
+  color:white;
+  text-decoration: none;
+  padding: 15px 20px 15px 20px;
+
+
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+  justify-content: flex-start;
+  border-radius: 2px;
+
+
+}
+
+li.c-dropdown {
+  display:flex;
+
+}
+
+
+.gc-dropdown-content.programs {
+  left: 34px;
+}
+.gc-dropdown-content.media {
+  left:52px;
+}
+.gc-dropdown-content.aboutus{
+  left:39px;
+}
+
+
+.gc-dropdown-content {
+  position:absolute;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index:1;
+  min-width: 150px;
+  font-family: 'Oswald' ,'sans-serif';
+  display: none;
+  top:59px;
+  border-radius: 1px;
+
+
+}
+
+.gc-dropdown-content a {
+  display:flex;
+  height:40px;
+  justify-content: flex-start;
+  color:black;
+  text-decoration: none;
+  align-items: center;
+
+
+}
+.gc-dropdown-content a:hover {
+  background-color: #f1f1f1;
+  justify-content: flex-start;
+}
+
+.dropdown:hover .gc-dropdown-content {
+  display:flex;
+}
+/*end of Nav bar*/
+
+
+
+/* Home Page Carousel */
+.slider {
+  float:none;
+  display:block;
+  height:auto;
+  max-width:90%;
+  margin-left:75px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* Home Page Navigation Box-Button */
+.nav-box{
+  width:100%;
+  border-bottom: 12px solid #77797f;
+}
+
+.nav-itembot {
+    display: block;
+    float: left;
+    border: 4px solid #77797f;
+    border-radius: 4px;
+    padding: 5px;
+    transition: 0.3s;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:9px;
+    width:31%;
+    height:auto;
+    max-width:100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav-itembot h2 {
+  height:43px;
+
+}
+
+
+a:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+
+.nav-itembot-image {
+  width: 100%;
+}
+
+.nav-itembot a {
+  display:block;
+  color:black;
+  text-align:center;
+}
+
+.content{
+  padding:20px;
+  color:white;
+}
+
+/* this is for clearing floats, add it after the last floating element */
+.clear {
+  clear:both
+}
+
+
+
+/*footers*/
+.p-footer1{
+  display:flex;
+  justify-content: space-between;
+  background-color:#3B4E7F;
+  color:white;
+  width:100%;
+  height:40%;
+
+
+}
+.c-item1-footer1{
+  display:flex;
+  width:30%;
+
+}
+.c-item2-footer1{
+  display:flex;
+
+}
+.c-item3-footer1{
+  display:flex;
+}
+
+.c-botleftpad{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2px;
+  height:100%;
+}
+
+.c-botleftpad p {
+  padding-left:20px;
+  font-weight: lighter;
+}
+
+.c-location{
+  display:flex;
+  padding:2px;
+  flex-direction: column;
+}
+
+.c-location p {
+  margin:5px;
+  font-weight:lighter;
+}
+.c-location h5 {
+  margin:3px;
+  font-size: 20px;
+  margin-top:12px;
+  margin-bottom: 10px;
+  font-weight:lighter;
+}
+
+
+.c-partners{
+  display:flex;
+  padding:2px;
+  flex-direction: column;
+}
+
+.c-partners h5{
+  margin:3px;
+  font-size: 20px;
+  margin-left: 25px;
+  margin-top:12px;
+  font-weight:lighter;
+}
+.c-partners ul{
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-weight: lighter;
+}
+
+
+
+
+.p-footer2{
+  display:flex;
+  justify-content: center;
+  background-color:#E8780C;
+  width:100%;
+  height:15%;
+  color:white;
+  font-size:45px;
+}
+
+
+.c-icon{
+  display:flex;
+  width:30%;
+  justify-content:space-around;
+  align-items:center;
+
+}
+.gc-icon1-footer2:hover{
+  color:#3B4E7F;
+
+
+
+
+}
+.gc-icon2-footer2:hover{
+  color:#3B4E7F;
+
+
+}
+.gc-icon3-footer2:hover{
+  color:#3B4E7F;
+
+}
+
+
+/* css for all main page pictures expect for the home page */
+
+/* css for program page*/
+.heropic_p{
+  background-image: url("../images/AUT_koller_Fotor.jpg");
+  height:100%;
+  width:94%;
+  margin-top:10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left:45px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* css for austrian page */
+.heropic_a{
+  background-image: url("../images/AUT_Team_Fotor.jpg");
+  height:100%;
+  width:94%;
+  margin-top:10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left:45px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*css for bavara page*/
+.heropic_b{
+  background-image: url("../images/regensburgstadium-660x330.jpg");
+  height:100%;
+  width:94%;
+  margin-top:10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left:45px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.auscontent{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/*css for schedule page */
+.scheduletable{
+  width: 90%;
+  margin-top:90px;
+  margin-bottom:20px;
+  margin-left: 60px;
+  text-align:center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*css for swiss page*/
+.heropic_s{
+  background-image: url("../images/swiss-baseball-softball.png");
+  height:100%;
+  width:94%;
+  margin-top:10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left:45px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* css for mission statement */
+.mission_main_content{
+
+}
+.mission_image{
+  position:relative;
+  display:inline;
+  margin-bottom:30px;
+
+
+}
+.great-text{
+  position:absolute;
+  font-size:50px;
+  bottom:0;
+  width:100%;
+  text-align:center;
+  color:white;
+
+}
+.mission_statement_heading{
+  background-image: url('../images/mound.jpg');
+  width:100%;
+  height:435px;
+  margin:10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.content_decription{
+  width:90%;
+  margin-top: 10px;
+  margin-bottom:10px;
+  margin-left: 55px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.mission_image{
+  margin-bottom:30px;
+}
+/*css for advisoryboard */
+.c-advisorymaincon{
+  display:flex;
+  justify-content: center;
+  height:200px;
+}
