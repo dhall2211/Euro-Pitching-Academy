@@ -1,0 +1,59 @@
+
+@media screen and (max-width:1260px){
+  /*title breaks down*/
+
+  /*change from big-navigation to small-navigation*/;
+  .small-navigation{
+    display:flex
+  }
+
+  .big-navigation{
+    display:none;
+  }
+
+
+  .logolink {
+      width:100%;
+      justify-content:space-between;
+  }
+  .gc-eurologo {
+      margin:10px;
+  }
+
+  .gc-logotitle {
+    display:flex;
+  }
+  .h1{
+    br{
+      display:none;
+    }
+
+  }
+  .p-header{
+    align-items:center;
+  }
+  .c-header1{
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+
+}
+
+@media screen and (max-width:1325px){
+  .orangetext{
+    font-size:25px;
+    white-space:nowrap;
+  }
+}
+
+@media screen and (max-width:1024px){
+  /*main break point*/
+}
+@media screen and (max-width:990px){
+
+}
+
+@media screen and (max-width:768px) {
+  /*main beeak point2*/
+
+}

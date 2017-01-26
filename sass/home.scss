@@ -1,0 +1,73 @@
+.mainimages{
+  display:flex;
+  justify-content: center;
+  width:100%;
+  margin-top:10px;
+}
+/* Home Page Carousel */
+.slider {
+  float:none;
+  display:block;
+  height:auto;
+  max-width:90%;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* Home Page Navigation Box-Button */
+.nav-box{
+  display:flex;
+  width:100%;
+  border-bottom: 12px solid #77797f;
+}
+
+.nav-itembot {
+    display: block;
+    float: left;
+    border: 4px solid #77797f;
+    border-radius: 4px;
+    padding: 5px;
+    transition: 0.3s;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:9px;
+    width:31%;
+    height:auto;
+    max-width:100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav-itembot h2 {
+  height:43px;
+
+}
+
+
+a:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+
+.nav-itembot-image {
+  width: 100%;
+}
+
+.nav-itembot a {
+  display:block;
+  color:black;
+  text-align:center;
+}
+
+.content{
+  padding:20px;
+  color:white;
+}
+
+/* this is for clearing floats, add it after the last floating element */
+.clear {
+  clear:both
+}

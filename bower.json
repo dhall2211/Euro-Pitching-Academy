@@ -1,0 +1,17 @@
+{
+  "name": "foo",
+  "description": "",
+  "main": "",
+  "authors": [
+    "dhall2211 <dhall2211@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/dhall2211/Euro-Pitching-Academy",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
