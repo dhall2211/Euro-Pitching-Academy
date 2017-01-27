@@ -219,6 +219,12 @@ li.c-dropdown {
     top: 62px;
 }
 
+.slide1 {
+  background-image: url('../images/slider/mainimage_bigsize.jpg');
+  width:100%;
+  background-size:contain;
+}
+
 .gc-dropdown-content {
     position: absolute;
     flex-direction: column;

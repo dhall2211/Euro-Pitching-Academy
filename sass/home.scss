@@ -3,14 +3,16 @@
   justify-content: center;
   width:100%;
   margin-top:10px;
+  flex-wrap:wrap;
 }
+
+
+
 /* Home Page Carousel */
 .slider {
-  float:none;
-  display:block;
+  display:flex;
   height:auto;
   max-width:90%;
-
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
   0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -24,22 +26,26 @@
 }
 
 .nav-itembot {
-    display: block;
-    float: left;
-    border: 4px solid #77797f;
+    display: flex;
+    border: 3px solid #77797f;
     border-radius: 4px;
-    padding: 5px;
     transition: 0.3s;
-    margin-top:20px;
-    margin-bottom:20px;
-    margin-left:9px;
-    width:31%;
-    height:auto;
-    max-width:100%;
+    width:30%;
+    margin:4px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.image-a{
 
+}
+
+.image-b{
+
+}
+
+.image-c{
+
+}
 .nav-itembot h2 {
   height:43px;
 
@@ -60,14 +66,10 @@ a:hover {
   display:block;
   color:black;
   text-align:center;
+  width:100%;
 }
 
 .content{
   padding:20px;
   color:white;
-}
-
-/* this is for clearing floats, add it after the last floating element */
-.clear {
-  clear:both
 }

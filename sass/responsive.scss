@@ -1,59 +1,102 @@
+@media screen and (max-width:1260px) {
+    /*hiding nav bar*/
+    .respon-navbar {
+        display: none;
+    }
+    /*change from big-navigation to small-navigation*/
+    ;
 
-@media screen and (max-width:1260px){
-  /*title breaks down*/
-
-  /*change from big-navigation to small-navigation*/;
-  .small-navigation{
-    display:flex
-  }
-
-  .big-navigation{
-    display:none;
-  }
-
-
-  .logolink {
-      width:100%;
-      justify-content:space-between;
-  }
-  .gc-eurologo {
-      margin:10px;
-  }
-
-  .gc-logotitle {
-    display:flex;
-  }
-  .h1{
-    br{
-      display:none;
+    .small-navigation {
+        display: flex;
     }
 
-  }
-  .p-header{
-    align-items:center;
-  }
-  .c-header1{
-    flex-grow: 1;
-    justify-content: space-between;
-  }
+    .big-navigation {
+        display: none;
+    }
 
+    .logolink {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .gc-eurologo {
+        margin: 10px;
+    }
+
+    .gc-logotitle {
+        display: flex;
+    }
+
+    .h1 {
+        br {
+            display: none;
+        }
+    }
+
+    .p-header {
+        align-items: center;
+    }
+
+    .c-header1 {
+        flex-grow: 1;
+        justify-content: space-between;
+    }
+
+    .maincontent{
+      display:flex;
+
+    }
+
+    .mainimages {
+        max-width:60%;
+        margin-top:0;
+    }
+
+    .slider {
+      max-width:100%;
+
+
+    }
+    .smallimages{
+      display:flex;
+      flex-direction: column;
+      max-width:40%;
+    }
+
+    .nav-itembot {
+        width: 0;
+        margin:0;
+        border:0;
+    }
+
+    .image-a {
+      display:none;
+        width: 100%;
+    }
+
+    .image-b {
+      width:100%
+    }
+
+    .image-c {
+      width:100%;
+    }
+
+    .nav-itembot a {
+        width: 100%;
+        
+    }
 }
-
-@media screen and (max-width:1325px){
-  .orangetext{
-    font-size:25px;
-    white-space:nowrap;
-  }
+@media screen and (max-width:1325px) {
+    .orangetext {
+        font-size: 25px;
+        white-space: nowrap;
+    }
 }
-
-@media screen and (max-width:1024px){
-  /*main break point*/
+@media screen and (max-width:1024px) {
+    /*main break point*/
 }
-@media screen and (max-width:990px){
-
-}
-
+@media screen and (max-width:990px) {}
 @media screen and (max-width:768px) {
-  /*main beeak point2*/
-
+    /*main beeak point2*/
 }

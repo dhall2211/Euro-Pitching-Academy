@@ -183,6 +183,11 @@ li.c-dropdown {
   left: 50px;
   top: 62px; }
 
+.slide1 {
+  background-image: url("../images/slider/mainimage_bigsize.jpg");
+  width: 100%;
+  background-size: contain; }
+
 .gc-dropdown-content {
   position: absolute;
   flex-direction: column;
@@ -298,12 +303,12 @@ li.c-dropdown {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 10px; }
+  margin-top: 10px;
+  flex-wrap: wrap; }
 
 /* Home Page Carousel */
 .slider {
-  float: none;
-  display: block;
+  display: flex;
   height: auto;
   max-width: 90%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
@@ -315,18 +320,12 @@ li.c-dropdown {
   border-bottom: 12px solid #77797f; }
 
 .nav-itembot {
-  display: block;
-  float: left;
-  border: 4px solid #77797f;
+  display: flex;
+  border: 3px solid #77797f;
   border-radius: 4px;
-  padding: 5px;
   transition: 0.3s;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 9px;
-  width: 31%;
-  height: auto;
-  max-width: 100%;
+  width: 30%;
+  margin: 4px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .nav-itembot h2 {
@@ -341,15 +340,12 @@ a:hover {
 .nav-itembot a {
   display: block;
   color: black;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
 
 .content {
   padding: 20px;
   color: white; }
-
-/* this is for clearing floats, add it after the last floating element */
-.clear {
-  clear: both; }
 
 /*program*/
 .heropic_p {
@@ -682,7 +678,9 @@ a:hover {
 
 /*zhaw*/
 @media screen and (max-width: 1260px) {
-  /*title breaks down*/
+  /*hiding nav bar*/
+  .respon-navbar {
+    display: none; }
   /*change from big-navigation to small-navigation*/
   .small-navigation {
     display: flex; }
@@ -701,7 +699,31 @@ a:hover {
     align-items: center; }
   .c-header1 {
     flex-grow: 1;
-    justify-content: space-between; } }
+    justify-content: space-between; }
+  .maincontent {
+    display: flex; }
+  .mainimages {
+    max-width: 60%;
+    margin-top: 0; }
+  .slider {
+    max-width: 100%; }
+  .smallimages {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%; }
+  .nav-itembot {
+    width: 0;
+    margin: 0;
+    border: 0; }
+  .image-a {
+    display: none;
+    width: 100%; }
+  .image-b {
+    width: 100%; }
+  .image-c {
+    width: 100%; }
+  .nav-itembot a {
+    width: 100%; } }
 
 @media screen and (max-width: 1325px) {
   .orangetext {
