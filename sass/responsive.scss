@@ -1,3 +1,16 @@
+@media screen and (max-width:1325px) {
+    .orangetext {
+        font-size: 25px;
+        white-space: nowrap;
+    }
+    .p-footer1{
+        p, ul{
+            font-size: 15px;
+        }
+        height:30%;
+    }
+}
+
 @media screen and (max-width:1260px) {
     /*hiding nav bar*/
     .respon-navbar {
@@ -84,19 +97,37 @@
 
     .nav-itembot a {
         width: 100%;
-        
+
     }
 }
-@media screen and (max-width:1325px) {
-    .orangetext {
-        font-size: 25px;
-        white-space: nowrap;
-    }
-}
-@media screen and (max-width:1024px) {
+
+@media screen and (max-width:1120px) {
     /*main break point*/
 }
-@media screen and (max-width:990px) {}
+@media screen and (max-width:925px) {
+    .gc-logotitle{
+        display:none;
+    }
+}
 @media screen and (max-width:768px) {
     /*main beeak point2*/
+}
+
+@media screen and (max-width:470px) {
+    .logo{
+        height:95px;
+        width:95px;
+    }
+    .p-header{
+        padding:0px 30px;
+    }
+    .gc-eurologo{
+        margin:0;
+    }
+    .logolink{
+        display:flex;
+        justify-content: center;
+        align-items: flex-start;
+
+    }
 }
