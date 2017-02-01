@@ -143,7 +143,7 @@ h4 {
   display: none;
   flex-direction:column;
   z-index: 1;
-  
+
 
 }
 .small-menuitems {
@@ -282,15 +282,27 @@ li.c-dropdown {
 .c-botleftpad p {
     padding-left: 20px;
 }
+.fa-4x{
+    display:none;
+}
+.smallitalic{
+    font-style: italic;
+    letter-spacing: .05em;
+    font-weight: 500;
+    font-size: 14px;
+}
 
 .c-location {
     display: flex;
     padding: 2px;
     flex-direction: column;
+
 }
 
 .c-location p {
     margin: 5px;
+    font-weight: lighter;
+
 }
 
 .c-location h5 {
