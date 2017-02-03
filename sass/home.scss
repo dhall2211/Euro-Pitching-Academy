@@ -63,7 +63,8 @@ a:hover {
 }
 
 .nav-itembot a {
-  display:block;
+  display:flex;
+  flex-direction: column;
   color:black;
   text-align:center;
   width:100%;

@@ -114,16 +114,12 @@ h4 {
     text-decoration: none;
 }
 
-.gc-eurologo {
 
-    margin-top: 16px;
-    border-style: solid;
-    border-radius: 5px;
-    border-width: thick;
-    margin-right: 10px;
-    height: 110px;
-}
 /* navigation bar*/
+.smallimages{
+    display:flex;
+    justify-content: center;
+}
 .p-mainmenu {
     list-style-type: none;
     display: flex;
@@ -151,7 +147,7 @@ h4 {
   display: none;
   flex-direction:column;
   z-index: 1;
-  height:116px;
+
 
 }
 .small-menuitems {
@@ -172,8 +168,7 @@ h4 {
   display:flex;
   flex-direction: column;
   align-items: flex-end;
-  height:80px;
-  width: 125px;
+
 }
 .respon-navbar{
   background-color: grey;
@@ -218,11 +213,15 @@ li.c-dropdown {
     left: 50px;
     top: 62px;
 }
-
-.slide1 {
-  background-image: url('../images/slider/mainimage_bigsize.jpg');
+.maincontent{
+    display: flex;
+    flex-direction: column;
+}
+.slider1 {
+  background-image: url("../images/slider2.png");
   width:100%;
-  background-size:contain;
+  height:93%;
+  background-size:cover;
 }
 
 .gc-dropdown-content {
@@ -291,15 +290,27 @@ li.c-dropdown {
 .c-botleftpad p {
     padding-left: 20px;
 }
+.fa-4x{
+    display:none;
+}
+.smallitalic{
+    font-style: italic;
+    letter-spacing: .05em;
+    font-weight: 500;
+    font-size: 14px;
+}
 
 .c-location {
     display: flex;
     padding: 2px;
     flex-direction: column;
+
 }
 
 .c-location p {
     margin: 5px;
+    font-weight: lighter;
+
 }
 
 .c-location h5 {
@@ -354,4 +365,12 @@ li.c-dropdown {
 
 .gc-icon3-footer2:hover {
     color: #3B4E7F;
+}
+
+.logo{
+    height:110px;
+    width:110px;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: thick;
 }

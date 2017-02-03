@@ -1,3 +1,16 @@
+@media screen and (max-width:1325px) {
+    .orangetext {
+        font-size: 25px;
+        white-space: nowrap;
+    }
+    .p-footer1{
+        p, ul{
+            font-size: 15px;
+        }
+        height:30%;
+    }
+}
+
 @media screen and (max-width:1260px) {
     /*hiding nav bar*/
     .respon-navbar {
@@ -44,23 +57,32 @@
 
     .maincontent{
       display:flex;
+      padding-bottom: 124px;
+      position: relative;
+
 
     }
 
     .mainimages {
-        max-width:60%;
+        background-image: url("../images/AUT_Bickel_ipad.png");
+        background-size: cover;
+        max-width:65%;
         margin-top:0;
+    }
+    .mySlides{
+        display:none;
     }
 
     .slider {
       max-width:100%;
 
 
+
     }
     .smallimages{
       display:flex;
       flex-direction: column;
-      max-width:40%;
+      max-width:35%;
     }
 
     .nav-itembot {
@@ -70,8 +92,12 @@
     }
 
     .image-a {
-      display:none;
+        background-image: url("views/npa.html");
+        background-size: cover;
         width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
     }
 
     .image-b {
@@ -84,19 +110,117 @@
 
     .nav-itembot a {
         width: 100%;
-        
+
+
+    }
+    .c-item1-footer1 p{
+        font-size:12px
     }
 }
-@media screen and (max-width:1325px) {
-    .orangetext {
-        font-size: 25px;
-        white-space: nowrap;
+
+@media screen and (max-width:1020px) {
+    .p-footer1{
+        height:300px;
+        flex-wrap: wrap;
+    }
+    .c-item1-footer1{
+        order:1;
+        width:100%;
+        height:122px;
+        justify-content: center;
+        margin-top: 8px;
+    }
+    .c-botleftpad p, {
+    font-size: 12px;
+}
+    .orangetext{
+        font-size: 35px;
+        word-spacing: 0.05em;
+        letter-spacing: 0.05em;
+        font-weight: 500;
+
+    }
+    .smallitalic{
+        font-size: 12px;
+        font-style: italic;
+    }
+    .c-botleftpad{
+        flex-wrap: nowrap;
+    }
+    .c-item2-footer1{
+        width: 50%;
+        justify-content: center;
+        margin-top: 6px;
+    }
+    .c-item3-footer1{
+        width: 50%;
+        justify-content: center;
+        margin-top: 6px;
+    }
+
+
+}
+@media screen and (max-width:925px) {
+    .gc-logotitle{
+        display:none;
+    }
+    .c-icon{
+        width:100%;
     }
 }
-@media screen and (max-width:1024px) {
-    /*main break point*/
+@media screen and (max-width:630px) {
+    .p-footer1{
+        flex-direction: column;
+        height:475px;
+
+    }
+    .c-item2-footer1{
+        width: 100%;
+        justify-content: space-around;
+
+    }
+    .c-item3-footer1{
+        width:100%;
+        justify-content: space-around;
+    }
+    .fa-4x{
+        display:flex;
+        align-self: center;
+        color:#E8780C;
+    }
+    .maincontent{
+        flex-direction: column;
+    }
+    .mainimages{
+        max-width: 100%;
+    }
+    .smallimages{
+        max-width: 80%;
+        align-self: center;
+    }
 }
-@media screen and (max-width:990px) {}
-@media screen and (max-width:768px) {
-    /*main beeak point2*/
+
+@media screen and (max-width:524px) {
+    .logo{
+        height:95px;
+        width:95px;
+    }
+    .p-header{
+        padding:0px 30px;
+    }
+    .gc-eurologo{
+        margin:0;
+    }
+    .logolink{
+        display:flex;
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+    .orangetext{
+        font-size:25px;
+    }
+    .p-footer1 p, .p-footer1 ul{
+        font-size:12px;
+    }
 }
