@@ -181,10 +181,28 @@ li.c-dropdown {
   flex-direction: column; }
 
 .slider1 {
+  display: none;
+  background-image: url("../images/slider1.png");
+  width: 100%;
+  height: 93%;
+  background-size: cover; }
+
+.slider2 {
+  display: flex;
   background-image: url("../images/slider2.png");
   width: 100%;
   height: 93%;
   background-size: cover; }
+
+.slider3 {
+  display: none;
+  background-image: url("../images/slider3.jpg");
+  width: 85%;
+  height: 93%;
+  background-size: cover; }
+
+.tabslider1 {
+  display: none; }
 
 .gc-dropdown-content {
   position: absolute;
@@ -727,17 +745,30 @@ a:hover {
     justify-content: space-between; }
   .maincontent {
     display: flex;
+    flex-direction: row;
     padding-bottom: 124px;
     position: relative; }
   .mainimages {
-    background-image: url("../images/AUT_Bickel_ipad.png");
-    background-size: cover;
-    max-width: 65%;
+    display: flex;
+    height: 71%;
+    width: 65%;
     margin-top: 0; }
-  .mySlides {
-    display: none; }
   .slider {
     max-width: 100%; }
+  .slider1 {
+    display: none; }
+  .slider2 {
+    display: none; }
+  .slider3 {
+    display: none; }
+  .tabslider1 {
+    display: flex;
+    background-image: url("../images/AUT_Bickel_ipad.png");
+    background-size: cover;
+    height: 100%;
+    width: 94%;
+    margin-top: 0;
+    z-index: 1; }
   .smallimages {
     display: flex;
     flex-direction: column;
