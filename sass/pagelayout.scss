@@ -120,6 +120,8 @@ h4 {
     display:flex;
     justify-content: center;
 }
+
+
 .p-mainmenu {
     list-style-type: none;
     display: flex;
@@ -217,31 +219,7 @@ li.c-dropdown {
     display: flex;
     flex-direction: column;
 }
-.slider1 {
-  display: none;
-  background-image: url("../images/slider1.png");
-  width:100%;
-  height:93%;
-  background-size:cover;
-}
-.slider2{
-    display:flex;
-    background-image: url("../images/slider2.png");
-    width:100%;
-    height:93%;
-    background-size:cover;
-}
-.slider3{
-    display:none;
-    background-image: url("../images/slider3.jpg");
-    width:85%;
-    height:93%;
-    background-size:cover;
 
-}
-.tabslider1{
-    display:none;
-}
 .gc-dropdown-content {
     position: absolute;
     flex-direction: column;

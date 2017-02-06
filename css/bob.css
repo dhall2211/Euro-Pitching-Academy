@@ -180,30 +180,6 @@ li.c-dropdown {
   display: flex;
   flex-direction: column; }
 
-.slider1 {
-  display: none;
-  background-image: url("../images/slider1.png");
-  width: 100%;
-  height: 93%;
-  background-size: cover; }
-
-.slider2 {
-  display: flex;
-  background-image: url("../images/slider2.png");
-  width: 100%;
-  height: 93%;
-  background-size: cover; }
-
-.slider3 {
-  display: none;
-  background-image: url("../images/slider3.jpg");
-  width: 85%;
-  height: 93%;
-  background-size: cover; }
-
-.tabslider1 {
-  display: none; }
-
 .gc-dropdown-content {
   position: absolute;
   flex-direction: column;
@@ -346,6 +322,30 @@ li.c-dropdown {
   max-width: 90%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
+.slider1 {
+  display: none;
+  background-image: url("../images/slider1.png");
+  width: 100%;
+  height: 93%;
+  background-size: cover; }
+
+.slider2 {
+  display: flex;
+  background-image: url("../images/slider2.png");
+  width: 100%;
+  height: 93%;
+  background-size: cover; }
+
+.slider3 {
+  display: none;
+  background-image: url("../images/slider3.jpg");
+  width: 85%;
+  height: 93%;
+  background-size: cover; }
+
+.tabslider1 {
+  display: none; }
+
 /* Home Page Navigation Box-Button */
 .nav-box {
   display: flex;
@@ -357,9 +357,34 @@ li.c-dropdown {
   border: 3px solid #77797f;
   border-radius: 4px;
   transition: 0.3s;
-  width: 30%;
+  width: 33%;
   margin: 4px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.image-a {
+  display: flex;
+  background-image: url("../images/npabanner.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 40%;
+  left: 0;
+  bottom: 0; }
+
+.image-b {
+  display: flex;
+  background-image: url("../images/baseballthrowing.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 40%; }
+
+.image-c {
+  display: flex;
+  background-image: url("../images/baseballthrowing.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 40%; }
 
 .nav-itembot h2 {
   height: 43px; }
@@ -746,12 +771,12 @@ a:hover {
   .maincontent {
     display: flex;
     flex-direction: row;
-    padding-bottom: 124px;
+    padding-bottom: 112px;
     position: relative; }
   .mainimages {
     display: flex;
-    height: 71%;
-    width: 65%;
+    max-height: 75%;
+    max-width: 63%;
     margin-top: 0; }
   .slider {
     max-width: 100%; }
@@ -764,32 +789,49 @@ a:hover {
   .tabslider1 {
     display: flex;
     background-image: url("../images/AUT_Bickel_ipad.png");
-    background-size: cover;
-    height: 100%;
-    width: 94%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 75%;
+    width: 100%;
     margin-top: 0;
     z-index: 1; }
   .smallimages {
     display: flex;
     flex-direction: column;
-    max-width: 35%; }
+    max-width: 35%;
+    max-height: 75%; }
   .nav-itembot {
     width: 0;
     margin: 0;
     border: 0; }
   .image-a {
-    background-image: url("views/npa.html");
+    display: flex;
+    background-image: url("../images/npabanner.jpg");
     background-size: cover;
     width: 100%;
+    height: 15%;
     position: absolute;
     left: 0;
     bottom: 0; }
   .image-b {
-    width: 100%; }
+    display: flex;
+    background-image: url("../images/baseballthrowing.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%; }
   .image-c {
-    width: 100%; }
+    display: flex;
+    background-image: url("../images/baseballthrowing.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%; }
   .nav-itembot a {
     width: 100%; }
+  .nav-itembot {
+    border-radius: 0px; }
   .c-item1-footer1 p {
     font-size: 12px; } }
 
@@ -828,6 +870,10 @@ a:hover {
   .gc-logotitle {
     display: none; }
   .c-icon {
+    width: 100%; }
+  .maincontent {
+    flex-direction: column; }
+  .mainimages {
     width: 100%; } }
 
 @media screen and (max-width: 630px) {
