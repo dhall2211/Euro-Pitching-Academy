@@ -416,7 +416,17 @@ a:hover {
   background-position: center;
   background-size: cover;
   margin-left: 45px;
+  position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.great-text-pro {
+  top: 15;
+  position: absolute;
+  font-size: 50px;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: white; }
 
 /*about*/
 /*advisoryboard*/
@@ -777,7 +787,8 @@ a:hover {
     display: flex;
     max-height: 75%;
     max-width: 63%;
-    margin-top: 0; }
+    margin-top: 0;
+    width: 100%; }
   .slider {
     max-width: 100%; }
   .slider1 {
@@ -789,7 +800,7 @@ a:hover {
   .tabslider1 {
     display: flex;
     background-image: url("../images/AUT_Bickel_ipad.png");
-    background-size: contain;
+    background-size: 95% 95%;
     background-repeat: no-repeat;
     background-position: center;
     max-height: 75%;
@@ -799,8 +810,10 @@ a:hover {
   .smallimages {
     display: flex;
     flex-direction: column;
-    max-width: 35%;
-    max-height: 75%; }
+    max-width: 37%;
+    max-height: 73%;
+    width: 100%;
+    height: auto; }
   .nav-itembot {
     width: 0;
     margin: 0;
@@ -808,26 +821,30 @@ a:hover {
   .image-a {
     display: flex;
     background-image: url("../images/npabanner.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
     width: 100%;
     height: 15%;
     position: absolute;
+    background-position: center;
     left: 0;
-    bottom: 0; }
+    bottom: 0;
+    background-repeat: no-repeat; }
   .image-b {
     display: flex;
     background-image: url("../images/baseballthrowing.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     width: 100%;
-    height: 100%; }
+    height: 62em;
+    background-repeat: no-repeat; }
   .image-c {
     display: flex;
     background-image: url("../images/baseballthrowing.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     width: 100%;
-    height: 100%; }
+    height: 62em;
+    background-repeat: no-repeat; }
   .nav-itembot a {
     width: 100%; }
   .nav-itembot {
@@ -874,7 +891,14 @@ a:hover {
   .maincontent {
     flex-direction: column; }
   .mainimages {
-    width: 100%; } }
+    width: 100%;
+    max-width: 100%; }
+  .tabslider1 {
+    display: flex;
+    height: 79%; }
+  .smallimages {
+    max-width: 100%;
+    max-height: 100%; } }
 
 @media screen and (max-width: 630px) {
   .p-footer1 {
@@ -913,4 +937,6 @@ a:hover {
   .orangetext {
     font-size: 25px; }
   .p-footer1 p, .p-footer1 ul {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .mainimages {
+    height: 100%; } }
