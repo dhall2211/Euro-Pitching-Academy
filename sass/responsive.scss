@@ -101,7 +101,7 @@
           max-height:75%;
           width:100%;
           margin-top:0;
-          z-index: 1;
+
 
       }
 
@@ -220,8 +220,8 @@
         flex-direction: column;
     }
     .mainimages{
-      width:100%;
       max-width: 100%;
+      max-height: 75%;
     }
     .tabslider1{
         display:flex;
@@ -231,7 +231,7 @@
     }
     .smallimages{
         max-width: 100%;
-        max-height:100%;
+        max-height:35%;
 
     }
 
@@ -263,9 +263,19 @@
     .mainimages{
         max-width: 100%;
     }
+    .tabslider1{
+        display:flex;
+        background-image: url("../images/AUT_Bickel.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        max-height:310px;
+        width:100%;
+        margin-top:0;
+    }
     .smallimages{
-        max-width: 80%;
-        align-self: center;
+        max-width: 100%;
+        max-height:35%;
     }
 }
 
@@ -286,13 +296,35 @@
         align-items: flex-start;
 
     }
+    .mainimages{
+        height:auto;
+    }
+    .tabslider1{
+        max-height: 20%;
+
+    }
+
+
+    .smallimages{
+        max-width: 100%;
+        max-height:20%;
+        
+    }
+    .image-a{
+        height:23%;
+
+    }
+    .image-b{
+        height:100%;
+    }
+    .image-c{
+        height:100%;
+    }
     .orangetext{
         font-size:25px;
     }
     .p-footer1 p, .p-footer1 ul{
         font-size:12px;
     }
-    .mainimages{
-        height:100%
-    }
+
 }
