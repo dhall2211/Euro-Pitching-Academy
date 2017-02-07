@@ -785,7 +785,7 @@ a:hover {
     position: relative; }
   .mainimages {
     display: flex;
-    max-height: 75%;
+    max-height: 72%;
     max-width: 63%;
     margin-top: 0;
     width: 100%; }
@@ -800,7 +800,7 @@ a:hover {
   .tabslider1 {
     display: flex;
     background-image: url("../images/AUT_Bickel_ipad.png");
-    background-size: 95% 95%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     max-height: 75%;
