@@ -688,13 +688,6 @@ a:hover {
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
-.ballback {
-  background-image: url("../images/background baseball_Fotor.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover; }
-
 .shopmaincon {
   display: flex;
   flex-direction: column;
@@ -707,20 +700,18 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   background-color: #77797f;
-  opacity: 0.8;
-  height: 315px;
-  width: 70%;
+  height: 35vh;
+  width: 70vh;
   color: white;
   margin: 60px; }
 
 .shoptext {
   width: 100%;
   text-align: center;
-  height: 150px;
+  height: 150vh;
   line-height: 1.8;
   display: flex;
   flex-direction: column;
-  margin: 50px;
   color: white; }
 
 .content {
@@ -958,4 +949,10 @@ a:hover {
   .orangetext {
     font-size: 25px; }
   .p-footer1 p, .p-footer1 ul {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .orangeblocktext {
+    font-size: 25px; }
+  .shoptext p {
+    font-size: 15px; }
+  .colorbox {
+    width: 100%; } }
