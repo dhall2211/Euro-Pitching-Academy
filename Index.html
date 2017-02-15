@@ -5,7 +5,8 @@
     </title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/bob.css" rel="stylesheet"/>
+    <link href="css/bob.css" rel="stylesheet" />
+    <link href="js/content.js" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
 </head>
 
@@ -145,55 +146,81 @@
                     </ul>
                 </div>
                 <!--responsive menu-->
-
-
                 <!--this is where the log in button will go-->
+                <!-- Button to open the modal login form -->
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+                <!-- The Modal -->
+                <div id="id01" class="modal">
+                    <form class="modal-content animate" action="action_page.php">
+                        <div class="imgcontainer">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                            <img src="images/rolliavatar.jpg" alt="Avatar" class="avatar">
+                        </div>
+
+                        <div class="container">
+                            <label><b>Username</b></label>
+                            <input type="text" placeholder="Enter Username" name="uname" required>
+
+                            <label><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+
+                            <button type="submit">Login</button>
+                            <input type="checkbox" checked="checked"> Remember me
+                        </div>
+
+                        <div class="container" style="background-color:#f1f1f1">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                            <span class="psw">Forgot <a href="#">password?</a></span>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- nav bar-->
 
-<div class="maincontent">
-    <div class="mainimages">
-        <!-- slide show carousel-->
+    <div class="maincontent">
+        <div class="mainimages">
+            <!-- slide show carousel-->
 
-        <div class="slider1">
-        </div>
-        <div class="slider2">
-        </div>
-        <div class="slider3">
-        </div>
-        <div class="tabslider1">
+            <div class="slider1">
+            </div>
+            <div class="slider2">
+            </div>
+            <div class="slider3">
+            </div>
+            <div class="tabslider1">
 
-        </div>
-        <div class="tabslider2">
+            </div>
+            <div class="tabslider2">
 
+            </div>
+            <div class="tabslider3">
+
+            </div>
         </div>
-        <div class="tabslider3">
+
+        <!-- navigational buttons -->
+        <div class="smallimages">
+            <div class="nav-itembot image-b">
+                <a href="views/program.html">
+                </a>
+            </div>
+
+            <div class="nav-itembot image-c">
+                <a href="views/zhaw.html">
+                </a>
+            </div>
+
+            <div class="nav-itembot image-a">
+                <a href="views/npa.html">
+                </a>
+            </div>
 
         </div>
     </div>
-
-    <!-- navigational buttons -->
-    <div class="smallimages">
-        <div class="nav-itembot image-b">
-            <a href="views/program.html">
-            </a>
-        </div>
-
-        <div class="nav-itembot image-c">
-            <a href="views/zhaw.html">
-            </a>
-        </div>
-
-        <div class="nav-itembot image-a">
-            <a href="views/npa.html">
-            </a>
-        </div>
-
-    </div>
-  </div>
     <!--footer -->
     <div class="p-footer1">
         <div class="c-item1-footer1">
@@ -204,27 +231,27 @@
             </div>
         </div>
 
-    <div class="c-item2-footer1">
-        <i class="fa fa-compass fa-4x" aria-hidden="true"></i>
-        <div class="c-location">
-            <h5 class="h5"> Find us!
+        <div class="c-item2-footer1">
+            <i class="fa fa-compass fa-4x" aria-hidden="true"></i>
+            <div class="c-location">
+                <h5 class="h5"> Find us!
             </h5>
-             <p>Official Site: BSC Fekdkirch Cardinals
-             </p>
-             <p>Address: Appenzellerstaße 11a Götzis, AT
-             </p>
-             <p>Email: info@europeanpitching.com
-             </p>
+                <p>Official Site: BSC Fekdkirch Cardinals
+                </p>
+                <p>Address: Appenzellerstaße 11a Götzis, AT
+                </p>
+                <p>Email: info@europeanpitching.com
+                </p>
+
+            </div>
 
         </div>
 
-    </div>
 
-
-      <div class="c-item3-footer1">
-          <i class="fa fa-handshake-o fa-4x" aria-hidden="true"></i>
-        <div class="c-partners">
-          <h5 class="h5">Our Partners</h4>
+        <div class="c-item3-footer1">
+            <i class="fa fa-handshake-o fa-4x" aria-hidden="true"></i>
+            <div class="c-partners">
+                <h5 class="h5">Our Partners</h4>
           <ul>
              <li>National Pitching Association</li>
              <li>Austian Baseball Federation</li>
