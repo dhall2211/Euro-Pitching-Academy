@@ -29,10 +29,12 @@
                 </div>
 
                 <div class="small-navigation">
-                    <div class="respon-icon">
-                        <img src="./images/ballmenuicon.png" alt="menuicon" style="height:90px;width:90px;" />
-                    </div>
-                    <ul class="respon-navbar">
+                    <button id="smalldropdn" onclick="showHideMobileNavigation()"           style="height:90px;width:90px;">
+                        <div class="respon-icon">
+                            <img src="./images/ballmenuicon.png" alt="menuicon" style="height:90px;width:90px;" />
+                        </div>
+                    </button>
+                    <ul class="respon-navbar" id="respon-navbar">
 
                         <li class="small-menuitems">
                             <a href="views/programs.html">PROGRAMS
@@ -289,29 +291,5 @@
   <script src="js/content.js">
   </script>
 
-  <script type="text/javascript">
-
-    // print into javascript console of browser
-    console.log('hello from javascript');
-    //create variable background
-    var background;
-    // store DOM-Element (html element) into this background
-    background = document.getElementById("background-shade");
-
-    var baseBallButton;
-    baseBallButton = document.getElementById("baseBallButton");
-
-    // add click event handler on background element (observe it)
-    basebalButton.click({
-      // action goes here - what should happen when menu gets triggered
-      background.addClassName="active";
-      // slide in navigation
-
-
-    });
-
-    background.className += ' active';
-
-  </script>
 
 </body>
