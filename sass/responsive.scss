@@ -1,31 +1,35 @@
 @media screen and (max-width:1325px) {
-
     .orangetext {
         font-size: 25px;
         white-space: nowrap;
     }
-    .p-footer1{
-        p, ul{
+
+    .p-footer1 {
+        p,
+        ul {
             font-size: 15px;
         }
-        height:30%;
+        height: 30%;
     }
 }
-
-@media screen and (max-width:1260px) {
+@media screen and (max-width:1305px) {
     /*hiding nav bar*/
     .respon-navbar {
         display: none;
     }
     /*change from big-navigation to small-navigation*/
-    ;
+
 
     .small-navigation {
         display: flex;
+        justify-content: center;
     }
 
     .big-navigation {
         display: none;
+    }
+    .in-out-button{
+        align-items: flex-end;
     }
 
     .logolink {
@@ -52,81 +56,79 @@
     }
 
     .c-header1 {
+        width: 50%;
         flex-grow: 1;
         justify-content: space-between;
     }
 
-    .maincontent{
-      display:flex;
-      flex-direction: row;
-      padding-bottom: 112px;
-      position: relative;
+    .c-header2 {
+        width: 31%;
+        flex-direction: row-reverse;
+    }
 
-
+    .maincontent {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 112px;
+        position: relative;
     }
 
     .mainimages {
-        display:flex;
-        max-height:72%;
-        max-width:63%;
-        margin-top:0;
-        width:100%;
+        display: flex;
+        max-height: 72%;
+        max-width: 63%;
+        margin-top: 0;
+        width: 100%;
     }
 
-
     .slider {
-      max-width:100%;
+        max-width: 100%;
+    }
 
-      }
-      .slider1{
-          display:none;
+    .slider1 {
+        display: none;
+    }
 
-      }
-      .slider2{
-          display:none;
+    .slider2 {
+        display: none;
+    }
 
+    .slider3 {
+        display: none;
+    }
 
-      }
-      .slider3{
-          display:none;
+    .tabslider1 {
+        display: flex;
+        background-image: url("../images/AUT_Bickel_ipad.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        max-height: 75%;
+        width: 100%;
+        margin-top: 0;
+    }
 
-
-      }
-      .tabslider1{
-          display:flex;
-          background-image: url("../images/AUT_Bickel_ipad.png");
-          background-size: 100% 100%;
-          background-repeat: no-repeat;
-          background-position: center;
-          max-height:75%;
-          width:100%;
-          margin-top:0;
-
-
-      }
-
-    .smallimages{
-      display:flex;
-      flex-direction: column;
-      max-width:37%;
-      max-height:73%;
-      width:100%;
-      height:auto;
-
+    .smallimages {
+        display: flex;
+        flex-direction: column;
+        max-width: 37%;
+        max-height: 73%;
+        width: 100%;
+        height: auto;
     }
 
     .nav-itembot {
         width: 0;
-        margin:0;
-        border:0;
+        margin: 0;
+        border: 0;
     }
 
     .image-a {
-        display:flex;
+        display: flex;
         background-image: url("../images/npabanner.jpg");
         background-size: 100% 100%;
         width: 100%;
-        height:15%;
+        height: 15%;
         position: absolute;
         background-position: center;
         left: 0;
@@ -135,206 +137,246 @@
     }
 
     .image-b {
-      display:flex;
-      background-image: url("../images/baseballthrowing.jpg");
-      background-size: 100% 100%;
-      background-position: center;
-      width:100%;
-      height:62em;
-      background-repeat: no-repeat;
-  }
+        display: flex;
+        background-image: url("../images/baseballthrowing.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        width: 100%;
+        height: 62em;
+        background-repeat: no-repeat;
+    }
 
     .image-c {
-      display:flex;
-      background-image: url("../images/baseballthrowing.jpg");
-      background-size: 100% 100%;
-      background-position: center;
-      width:100%;
-      height:62em;
-      background-repeat: no-repeat;
+        display: flex;
+        background-image: url("../images/baseballthrowing.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        width: 100%;
+        height: 62em;
+        background-repeat: no-repeat;
     }
 
     .nav-itembot a {
         width: 100%;
-
-
     }
-    .nav-itembot{
-        border-radius: 0px;
+
+    .nav-itembot {
+        border-radius: 0;
     }
-    .c-item1-footer1 p{
-        font-size:12px
+
+    .c-item1-footer1 p {
+        font-size: 12px;
     }
 }
-
 @media screen and (max-width:1020px) {
-    .p-footer1{
-        height:300px;
+    .p-footer1 {
+        height: 300px;
         flex-wrap: wrap;
     }
-    .c-item1-footer1{
-        order:1;
-        width:100%;
-        height:122px;
+
+    .c-item1-footer1 {
+        order: 1;
+        width: 100%;
+        height: 122px;
         justify-content: center;
         margin-top: 8px;
     }
-    .c-botleftpad p, {
-    font-size: 12px;
-}
-    .orangetext{
+
+    ,
+    .c-botleftpad p {
+        font-size: 12px;
+    }
+
+    .orangetext {
         font-size: 35px;
         word-spacing: 0.05em;
         letter-spacing: 0.05em;
         font-weight: 500;
-
     }
-    .smallitalic{
+
+    .smallitalic {
         font-size: 12px;
         font-style: italic;
     }
-    .c-botleftpad{
+
+    .c-botleftpad {
         flex-wrap: nowrap;
     }
-    .c-item2-footer1{
-        width: 50%;
-        justify-content: center;
-        margin-top: 6px;
-    }
-    .c-item3-footer1{
+
+    .c-item2-footer1 {
         width: 50%;
         justify-content: center;
         margin-top: 6px;
     }
 
-
+    .c-item3-footer1 {
+        width: 50%;
+        justify-content: center;
+        margin-top: 6px;
+    }
 }
-@media screen and (max-width:925px) {
-    .gc-logotitle{
-        display:none;
+@media screen and (max-width:980px) {
+    .gc-logotitle {
+        display: none;
     }
-    .c-icon{
-        width:100%;
+
+    .c-icon {
+        width: 100%;
     }
-    .maincontent{
+
+    .maincontent {
         flex-direction: column;
     }
-    .mainimages{
-      max-width: 100%;
-      max-height: 75%;
-    }
-    .tabslider1{
-        display:flex;
-        height:79%;
 
-
-    }
-    .smallimages{
+    .mainimages {
         max-width: 100%;
-        max-height:35%;
-
+        max-height: 75%;
     }
 
+    .tabslider1 {
+        display: flex;
+        height: 79%;
+    }
 
+    .smallimages {
+        max-width: 100%;
+        max-height: 35%;
+    }
+    .in-out-button{
+        flex-direction: column;
+        height: 119px;
+        justify-content: center;
+    }
+    .c-header2{
+        width:57%;
+    }
 }
 @media screen and (max-width:630px) {
-    .p-footer1{
+    .p-footer1 {
         flex-direction: column;
-        height:475px;
-
+        height: 475px;
     }
-    .c-item2-footer1{
+
+    .c-item2-footer1 {
         width: 100%;
         justify-content: space-around;
-
     }
-    .c-item3-footer1{
-        width:100%;
+
+    .c-item3-footer1 {
+        width: 100%;
         justify-content: space-around;
     }
-    .fa-4x{
-        display:flex;
+
+    .fa-4x {
+        display: flex;
         align-self: center;
-        color:#E8780C;
+        color: #E8780C;
     }
-    .maincontent{
+
+    .maincontent {
         flex-direction: column;
     }
-    .mainimages{
+
+    .mainimages {
         max-width: 100%;
     }
-    .tabslider1{
-        display:flex;
+
+    .tabslider1 {
+        display: flex;
         background-image: url("../images/AUT_Bickel.jpg");
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: center;
-        max-height:310px;
-        width:100%;
-        margin-top:0;
+        max-height: 310px;
+        width: 100%;
+        margin-top: 0;
     }
-    .smallimages{
+
+    .smallimages {
         max-width: 100%;
-        max-height:35%;
+        max-height: 35%;
     }
 }
-
 @media screen and (max-width:524px) {
-    .logo{
-        height:95px;
-        width:95px;
+    .logo {
+        height: 95px;
+        width: 95px;
     }
-    .p-header{
-        padding:0px 30px;
+
+    .p-header {
+        padding: 0 30px;
     }
-    .gc-eurologo{
-        margin:0;
+
+    .gc-eurologo {
+        margin: 0;
     }
-    .logolink{
-        display:flex;
+
+    .logolink {
+        display: flex;
         justify-content: center;
         align-items: flex-start;
+    }
 
+    .mainimages {
+        height: auto;
     }
-    .mainimages{
-        height:auto;
-    }
-    .tabslider1{
+
+    .tabslider1 {
         max-height: 20%;
-
     }
 
-
-    .smallimages{
+    .smallimages {
         max-width: 100%;
-        max-height:20%;
+        max-height: 20%;
+    }
 
+    .image-a {
+        height: 23%;
     }
-    .image-a{
-        height:23%;
 
+    .image-b {
+        height: 100%;
     }
-    .image-b{
-        height:100%;
+
+    .image-c {
+        height: 100%;
     }
-    .image-c{
-        height:100%;
-    }
-    .orangetext{
-        font-size:25px;
-    }
-    .p-footer1 p, .p-footer1 ul{
-        font-size:12px;
-    }
-    .orangeblocktext{
+
+    .orangetext {
         font-size: 25px;
-
     }
-    .shoptext p{
+
+    .p-footer1 p,
+    .p-footer1 ul {
+        font-size: 12px;
+    }
+
+    .orangeblocktext {
+        font-size: 25px;
+    }
+
+    .shoptext p {
         font-size: 15px;
     }
-    .colorbox{
-        width:100%;
+
+    .colorbox {
+        width: 100%;
+    }
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
     }
 
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn,
+    .signupbtn{
+    width: 100%;
+    }
 }

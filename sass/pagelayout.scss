@@ -6,12 +6,13 @@ html {
     margin: 0;
     padding: 0;
 }
-body{
-  position: relative;
+
+body {
+    position: relative;
 }
 
 ul {
-  padding-left: 0;
+    padding-left: 0;
 }
 
 h1,
@@ -64,23 +65,22 @@ h4 {
     min-width: 320px;
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .background-shade {
-  display: none;
-  position:absolute;
-  background-color: white;
-  height: 100%;
-  width:100%;
-  opacity: .5;
-  z-index:2;
-
-  // "state" of the class
-  &.active {
-    display: flex;
-  }
+    display: none;
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 2;
+    // "state" of the class
+    &.active {
+        display: flex;
+    }
 }
-
 /*headers*/
 .p-header {
     display: flex;
@@ -100,28 +100,30 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    width:40%;
 }
 
 .c-header2 {
     display: flex;
-    width: auto;
-    height:150px;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+    height: 150px;
+    .in-out-button{
+        flex-grow:2;
+    }
 }
 
 .logolink {
-    display:flex;
+    display: flex;
     align-items: center;
     color: inherit;
     text-decoration: none;
 }
-
-
 /* navigation bar*/
-.smallimages{
-    display:flex;
+.smallimages {
+    display: flex;
     justify-content: center;
 }
-
 
 .p-mainmenu {
     list-style-type: none;
@@ -136,57 +138,55 @@ h4 {
     margin: 0;
 }
 
-
 .c-mainmenuitems {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-left:20px;
+    margin-left: 20px;
 }
 
 .small-navigation {
-  display: none;
-  flex-direction:column;
-  z-index: 1;
-
-
+    display: none;
+    flex-direction: column;
+    z-index: 1;
+    position: relative;
 }
+
 .small-menuitems {
-  display:flex;
-  flex-direction: column;
-  justify-content:center;
-
-}
-
-.small-menuitems{
-  a {
     display: flex;
-    justify-content: space-between;
-  }
+    flex-direction: column;
+    justify-content: center;
 }
-.big-navigation{
-    display:flex;
+
+.small-menuitems {
+    a {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.big-navigation {
+    display: flex;
     align-self: flex-end;
 }
 
-.respon-icon{
-  display:flex;
-  flex-direction: column;
-  align-items: flex-end;
-
-}
-.respon-navbar{
-  background-color: grey;
-  width:37%;
-  border-radius: 2px;
-  position: absolute;
-  right: 0px;
-  top:144px;
-  height:48%;
+.respon-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
+.respon-navbar {
+    background-color: grey;
+    width: 37%;
+    border-radius: 2px;
+    position: absolute;
+    right: 0;
+    top: 144px;
+    height: 48%;
+}
 
 .gc-dropbtn,
 li a {
@@ -220,9 +220,11 @@ li.c-dropdown {
     left: 50px;
     top: 62px;
 }
-.maincontent{
+
+.maincontent {
     display: flex;
     flex-direction: column;
+    width:100%;
 }
 
 .gc-dropdown-content {
@@ -252,11 +254,59 @@ li.c-dropdown {
     justify-content: flex-start;
 }
 
- .gc-dropdown-content {
+.gc-dropdown-content {
     display: flex;
 }
 /*end of Nav bar*/
-/*login button*/
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: grey;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    transition: 0.3s;
+}
+/* When you mouse over the navigation links, change their color */
+.offcanvas a:focus,
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left 0.5s;
+    padding: 20px;
+}
+
 /* Full-width input fields */
 input[type=text], input[type=password] {
     width: 100%;
@@ -268,45 +318,20 @@ input[type=text], input[type=password] {
 }
 
 /* Set a style for all buttons */
-button {
-    background-color: #E8780C;
-    color: white;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    height:40px;
-    border-style:solid;
-    border-radius: 2px;
-    margin-top: 7px;
-    padding: 8px;
-}
+
 
 /* Extra styles for the cancel button */
 .cancelbtn {
-    width: auto;
-    padding: 10px 18px;
+    padding: 14px 20px;
     background-color: #f44336;
 }
 
-/* Center the image and position the close button */
-.imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-    position: relative;
-}
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {float:left;width:50%}
 
-img.avatar {
-    width: 40%;
-    border-radius: 50%;
-}
-
+/* Add padding to container elements */
 .container {
     padding: 16px;
-}
-
-span.psw {
-    float: right;
-    padding-top: 16px;
 }
 
 /* The Modal (background) */
@@ -335,10 +360,10 @@ span.psw {
 /* The Close Button (x) */
 .close {
     position: absolute;
-    right: 25px;
-    top: 0;
+    right: 35px;
+    top: 15px;
     color: #000;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bold;
 }
 
@@ -348,33 +373,163 @@ span.psw {
     cursor: pointer;
 }
 
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+/*login button*/
+/* Full-width input fields */
+input[type=password],
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.in-out-button{
+    display:flex;
+    width:100%;
+    height: 65px;
+    flex-direction: row;
+    justify-content: flex-end;
+
+
+}
+/* Set a style for all buttons */
+.button2 {
+    display: flex;
+    background-color: #3B4E7F;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding-right: 18px;
+
+}
+
+.button1 {
+    display: flex;
+    background-color: #3B4E7F;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding-right: 20px;
+
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0,0,0);
+    /* Fallback color */
+    background-color: rgba(0,0,0,0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15%;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:focus,
+.close:hover {
+    color: red;
+    cursor: pointer;
+}
 /* Add Zoom Animation */
 .animate {
     -webkit-animation: animatezoom 0.6s;
-    animation: animatezoom 0.6s
+    animation: animatezoom 0.6s;
 }
-
 @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)}
-    to {-webkit-transform: scale(1)}
-}
+    from {
+        -webkit-transform: scale(0);
+    }
 
+    to {
+        -webkit-transform: scale(1);
+    }
+}
 @keyframes animatezoom {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
-}
+    from {
+        transform: scale(0);
+    }
 
+    to {
+        transform: scale(1);
+    }
+}
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
     span.psw {
-       display: block;
-       float: none;
+        display: block;
+        float: none;
     }
+
     .cancelbtn {
-       width: 100%;
+        width: 100%;
     }
 }
-
 /*footers*/
 .p-footer1 {
     display: flex;
@@ -410,12 +565,14 @@ span.psw {
 .c-botleftpad p {
     padding-left: 20px;
 }
-.fa-4x{
-    display:none;
+
+.fa-4x {
+    display: none;
 }
-.smallitalic{
+
+.smallitalic {
     font-style: italic;
-    letter-spacing: .05em;
+    letter-spacing: 0.05em;
     font-weight: 500;
     font-size: 14px;
 }
@@ -424,13 +581,11 @@ span.psw {
     display: flex;
     padding: 2px;
     flex-direction: column;
-
 }
 
 .c-location p {
     margin: 5px;
     font-weight: lighter;
-
 }
 
 .c-location h5 {
@@ -487,9 +642,9 @@ span.psw {
     color: #3B4E7F;
 }
 
-.logo{
-    height:110px;
-    width:110px;
+.logo {
+    height: 110px;
+    width: 110px;
     border-style: solid;
     border-radius: 5px;
     border-width: thick;

@@ -62,7 +62,7 @@ h4 {
   background-color: white;
   height: 100%;
   width: 100%;
-  opacity: .5;
+  opacity: 0.5;
   z-index: 2; }
   .background-shade.active {
     display: flex; }
@@ -84,12 +84,16 @@ h4 {
 .c-header1 {
   display: flex;
   align-items: center;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  width: 40%; }
 
 .c-header2 {
   display: flex;
-  width: auto;
+  justify-content: flex-end;
+  flex-direction: column-reverse;
   height: 150px; }
+  .c-header2 .in-out-button {
+    flex-grow: 2; }
 
 .logolink {
   display: flex;
@@ -125,7 +129,8 @@ h4 {
 .small-navigation {
   display: none;
   flex-direction: column;
-  z-index: 1; }
+  z-index: 1;
+  position: relative; }
 
 .small-menuitems {
   display: flex;
@@ -147,12 +152,12 @@ h4 {
 
 .respon-navbar {
   background-color: grey;
-  width: 265px;
+  width: 37%;
   border-radius: 2px;
   position: absolute;
-  right: 0px;
+  right: 0;
   top: 144px;
-  height: 38%; }
+  height: 48%; }
 
 .gc-dropbtn,
 li a {
@@ -183,7 +188,8 @@ li.c-dropdown {
 
 .maincontent {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 100%; }
 
 .gc-dropdown-content {
   position: absolute;
@@ -213,7 +219,54 @@ li.c-dropdown {
   display: flex; }
 
 /*end of Nav bar*/
-/*login button*/
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: grey;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */ }
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: flex;
+  transition: 0.3s; }
+
+/* When you mouse over the navigation links, change their color */
+.offcanvas a:focus,
+.sidenav a:hover {
+  color: #f1f1f1; }
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px; }
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px; }
+
 /* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
@@ -224,17 +277,107 @@ input[type=text], input[type=password] {
   box-sizing: border-box; }
 
 /* Set a style for all buttons */
-button {
-  background-color: #E8780C;
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336; }
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%; }
+
+/* Add padding to container elements */
+.container {
+  padding: 16px; }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px; }
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */ }
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  color: #000;
+  font-size: 40px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer; }
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+/*login button*/
+/* Full-width input fields */
+input[type=password],
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box; }
+
+.in-out-button {
+  display: flex;
+  width: 100%;
+  height: 65px;
+  flex-direction: row;
+  justify-content: flex-end; }
+
+/* Set a style for all buttons */
+.button2 {
+  display: flex;
+  background-color: #3B4E7F;
   color: white;
   border: none;
   cursor: pointer;
   width: 100%;
-  height: 40px;
-  border-style: solid;
-  border-radius: 2px;
-  margin-top: 7px;
-  padding: 8px; }
+  padding-right: 18px; }
+
+.button1 {
+  display: flex;
+  background-color: #3B4E7F;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  padding-right: 20px; }
 
 /* Extra styles for the cancel button */
 .cancelbtn {
@@ -245,7 +388,7 @@ button {
 /* Center the image and position the close button */
 .imgcontainer {
   text-align: center;
-  margin: 24px 0 12px 0;
+  margin: 24px 0 12px;
   position: relative; }
 
 img.avatar {
@@ -284,7 +427,7 @@ span.psw {
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 5% auto 15% auto;
+  margin: 5% auto 15%;
   /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
   width: 80%;
@@ -299,8 +442,8 @@ span.psw {
   font-size: 35px;
   font-weight: bold; }
 
-.close:hover,
-.close:focus {
+.close:focus,
+.close:hover {
   color: red;
   cursor: pointer; }
 
@@ -364,7 +507,7 @@ span.psw {
 
 .smallitalic {
   font-style: italic;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   font-weight: 500;
   font-size: 14px; }
 
@@ -864,18 +1007,22 @@ a:hover {
     white-space: nowrap; }
   .p-footer1 {
     height: 30%; }
-    .p-footer1 p, .p-footer1 ul {
+    .p-footer1 p,
+    .p-footer1 ul {
       font-size: 15px; } }
 
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1305px) {
   /*hiding nav bar*/
   .respon-navbar {
     display: none; }
   /*change from big-navigation to small-navigation*/
   .small-navigation {
-    display: flex; }
+    display: flex;
+    justify-content: center; }
   .big-navigation {
     display: none; }
+  .in-out-button {
+    align-items: flex-end; }
   .logolink {
     width: 100%;
     justify-content: space-between; }
@@ -888,8 +1035,12 @@ a:hover {
   .p-header {
     align-items: center; }
   .c-header1 {
+    width: 50%;
     flex-grow: 1;
     justify-content: space-between; }
+  .c-header2 {
+    width: 31%;
+    flex-direction: row-reverse; }
   .maincontent {
     display: flex;
     flex-direction: row;
@@ -959,7 +1110,7 @@ a:hover {
   .nav-itembot a {
     width: 100%; }
   .nav-itembot {
-    border-radius: 0px; }
+    border-radius: 0; }
   .c-item1-footer1 p {
     font-size: 12px; } }
 
@@ -973,6 +1124,7 @@ a:hover {
     height: 122px;
     justify-content: center;
     margin-top: 8px; }
+  
   .c-botleftpad p {
     font-size: 12px; }
   .orangetext {
@@ -994,7 +1146,7 @@ a:hover {
     justify-content: center;
     margin-top: 6px; } }
 
-@media screen and (max-width: 925px) {
+@media screen and (max-width: 980px) {
   .gc-logotitle {
     display: none; }
   .c-icon {
@@ -1009,7 +1161,13 @@ a:hover {
     height: 79%; }
   .smallimages {
     max-width: 100%;
-    max-height: 35%; } }
+    max-height: 35%; }
+  .in-out-button {
+    flex-direction: column;
+    height: 119px;
+    justify-content: center; }
+  .c-header2 {
+    width: 57%; } }
 
 @media screen and (max-width: 630px) {
   .p-footer1 {
@@ -1047,7 +1205,7 @@ a:hover {
     height: 95px;
     width: 95px; }
   .p-header {
-    padding: 0px 30px; }
+    padding: 0 30px; }
   .gc-eurologo {
     margin: 0; }
   .logolink {
@@ -1069,11 +1227,25 @@ a:hover {
     height: 100%; }
   .orangetext {
     font-size: 25px; }
-  .p-footer1 p, .p-footer1 ul {
+  .p-footer1 p,
+  .p-footer1 ul {
     font-size: 12px; }
   .orangeblocktext {
     font-size: 25px; }
   .shoptext p {
     font-size: 15px; }
   .colorbox {
+    width: 100%; } }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px; }
+  .sidenav a {
+    font-size: 18px; } }
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
     width: 100%; } }

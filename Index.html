@@ -11,9 +11,8 @@
 </head>
 
 <body>
-    <div id="background-shade" class="background-shade">
-    </div>
 
+    <!-- id main is for the nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <div class="gf-layout">
         <!-- heading content -->
         <div class="p-header">
@@ -27,161 +26,151 @@
                 <div class="gc-logotitle">
                     <h1 class="h1"><br>European</br> Pitching Academy</h1>
                 </div>
-
-                <div class="small-navigation">
-                    <button id="smalldropdn" onclick="showHideMobileNavigation()"           style="height:90px;width:90px;">
-                        <div class="respon-icon">
-                            <img src="./images/ballmenuicon.png" alt="menuicon" style="height:90px;width:90px;" />
-                        </div>
-                    </button>
-                    <ul class="respon-navbar" id="respon-navbar">
-
-                        <li class="small-menuitems">
-                            <a href="views/programs.html">PROGRAMS
-                              <div class= "plus">
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                              </div>
-                            </a>
-
-                            <a href="views/austria.html">AUSTRIA</a>
-                            <a href="views/bavaria.html">BAVARIA</a>
-                            <a href="views/swiss.html">SWITZERLAND</a>
-                        </li>
-
-                        <li class="small-menuitems">
-                            <a href="views/schedule.html">
-                              SCHEDULE
-                            </a>
-                        </li>
-
-                        <li class="small-menuitems">
-                            <div class="">
-                                <a href="views/shop.html">
-                                  SHOP
-                                </a>
-                            </div>
-                        </li>
-
-                        <li class="small-menuitems">
-                            <a href="views/news.html">
-                              MEDIA
-                              <div class= "plus">
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                              </div>
-                            </a>
-                        </li>
-
-                        <li class="small-menuitems">
-                            <div class="">
-                                <a href="views/mlb.html">MLB NETWORK</a>
-                                <a href="views/blog.html">BLOG</a>
-                            </div>
-                        </li>
-
-                        <li class="small-menuitems">
-                            <a href="views/aboutus.html">
-                              ABOUT US
-                              <div class= "plus">
-                              <i class="fa fa-plus" aria-hidden="true"></i>
-                              </div>
-                            </a>
-
-                            <div class="">
-                                <a href="views/missionstatement.html">WHO ARE WE</a>
-                                <a href="views/ourstaff.html">OUR STAFF</a>
-                                <a href="views/advisoryboard.html">ADVISORY BOARD</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
             </div>
+            <!--end of header 1 content -->
             <div class="c-header2">
+                <div class="small-navigation">
+                    <div class="sidenav" id="mySidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                        <a href="views/programs.html">PROGRAMS
+                            <div class= "plus">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                        <a href="views/austria.html">AUSTRIA</a>
+                        <a href="views/bavaria.html">BAVARIA</a>
+                        <a href="views/swiss.html">SWITZERLAND</a>
+                        <a href="views/schedule.html">SCHEDULE</a>
+                        <a href="views/shop.html">SHOP</a>
+                        <a href="views/news.html">MEDIA
+                            <div class= "plus">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                        <a href="views/mlb.html">MLB NETWORK</a>
+                        <a href="views/blog.html">BLOG</a>
+                        <a href="views/aboutus.html">ABOUT US
+                            <div class= "plus">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </div>
+                                </a>
+                        <a href="views/missionstatement.html">WHO ARE WE</a>
+                        <a href="views/ourstaff.html">OUR STAFF</a>
+                        <a href="views/advisoryboard.html">ADVISORY BOARD</a>
+                    </div>
+                    <!-- Use any element to open the sidenav-->
+                    <span onclick="openNav()">
+                            <div class="respon-icon">
+                                <img src="./images/ballmenuicon.png" alt="menuicon" style="height:90px;width:90px;" />
+                            </div>
+                        </span>
+                </div>
+
 
                 <div class="big-navigation">
                     <ul class="p-mainmenu">
-
-                        <li class="c-mainmenuitems dropdown">
-                            <a href="views/programs.html" class="gc-dropbtn">PROGRAMS
+                    <li class="c-mainmenuitems dropdown">
+                        <a href="views/programs.html" class="gc-dropbtn">PROGRAMS
                             </a>
-                            <div class="gc-dropdown-content programs">
-                                <a href="views/austria.html">AUSTRIA</a>
-                                <a href="views/bavaria.html">BAVARIA</a>
-                                <a href="views/swiss.html">SWITZERLAND</a>
-                            </div>
-                        </li>
-
-
-                        <li class="c-mainmenuitems">
-                            <a href="views/schedule.html">
-                      SCHEDULE
-                    </a>
-                        </li>
-
-                        <li class="c-mainmenuitems">
-                            <div class="nav-itemtop">
-                                <a href="views/shop.html">SHOP
-                    </a>
-                            </div>
-                        </li>
-
-                        <li class="c-mainmenuitems dropdown">
-                            <a href="views/news.html">MEDIA
-                    </a>
-                            <div class="gc-dropdown-content media">
-                                <a href="views/mlb.html">MLB NETWORK</a>
-                                <a href="views/blog.html">BLOG</a>
-                            </div>
-                        </li>
-
-
-                        <li class="c-mainmenuitems dropdown">
-                            <a href="views/aboutus.html" class="gc-dropbtn">
-                      ABOUT US
-                    </a>
-                            <div class="gc-dropdown-content aboutus">
-                                <a href="views/missionstatement.html">WHO ARE WE</a>
-                                <a href="views/ourstaff.html">OUR STAFF</a>
-                                <a href="views/advisoryboard.html">ADVISORY BOARD</a>
-                            </div>
-
-                        </li>
-                    </ul>
-                </div>
-                <!--responsive menu-->
-                <!--this is where the log in button will go-->
-                <!-- Button to open the modal login form -->
-                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-
-                <!-- The Modal -->
-                <div id="id01" class="modal">
-                    <form class="modal-content animate" action="action_page.php">
-                        <div class="imgcontainer">
-                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                            <img src="images/rolliavatar.jpg" alt="Avatar" class="avatar">
+                        <div class="gc-dropdown-content programs">
+                            <a href="views/austria.html">AUSTRIA</a>
+                            <a href="views/bavaria.html">BAVARIA</a>
+                            <a href="views/swiss.html">SWITZERLAND</a>
                         </div>
+                    </li>
+                    <li class="c-mainmenuitems">
+                        <a href="views/schedule.html">SCHEDULE</a>
+                    </li>
 
-                        <div class="container">
-                            <label><b>Username</b></label>
-                            <input type="text" placeholder="Enter Username" name="uname" required>
-
-                            <label><b>Password</b></label>
-                            <input type="password" placeholder="Enter Password" name="psw" required>
-
-                            <button type="submit">Login</button>
-                            <input type="checkbox" checked="checked"> Remember me
+                    <li class="c-mainmenuitems">
+                        <div class="nav-itemtop">
+                            <a href="views/shop.html">SHOP</a>
                         </div>
+                    </li>
 
-                        <div class="container" style="background-color:#f1f1f1">
-                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                            <span class="psw">Forgot <a href="#">password?</a></span>
+                    <li class="c-mainmenuitems dropdown">
+                        <a href="views/news.html">MEDIA
+                    </a>
+                        <div class="gc-dropdown-content media">
+                            <a href="views/mlb.html">MLB NETWORK</a>
+                            <a href="views/blog.html">BLOG</a>
                         </div>
-                    </form>
-                </div>
+                    </li>
+
+
+                    <li class="c-mainmenuitems dropdown">
+                        <a href="views/aboutus.html" class="gc-dropbtn">ABOUT US</a>
+                        <div class="gc-dropdown-content aboutus">
+                            <a href="views/missionstatement.html">WHO ARE WE</a>
+                            <a href="views/ourstaff.html">OUR STAFF</a>
+                            <a href="views/advisoryboard.html">ADVISORY BOARD</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
+            <!--responsive menu-->
+        <div class=in-out-button>
+            <button class="button2" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</button>
+            <div id="id02" class="modal">
+                <form class="modal-content animate" action="action_page.php">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="images/rolliavatar.jpg" alt="Avatar" class="avatar">
+                    </div>
+
+                    <div class="container">
+                        <label><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <button type="submit">Login</button>
+                        <input type="checkbox" checked="checked"> Remember me
+                    </div>
+
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </form>
+            </div>
+            <!-- Button to open the modal login form -->
+
+            <button class="button1" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+            <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                <form class="modal-content animate" action="/action_page.php">
+                    <div class="container">
+                        <label><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+
+                        <label><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <label><b>Repeat Password</b></label>
+                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                        <input type="checkbox" checked="checked"> Remember me
+                        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+                        <div class="clearfix">
+                            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                            <button type="submit" class="signupbtn">Sign Up</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- The Sign in Model -->
+
+        </div>
         </div>
     </div>
+    </div>
+</div>
 
-    <!-- nav bar-->
+    <!--end of navbars, signin, and signup-->
 
     <div class="maincontent">
         <div class="mainimages">
