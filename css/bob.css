@@ -70,8 +70,7 @@ h4 {
 /*headers*/
 .p-header {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   background-color: #3B4E7F;
   width: 100%;
   height: 150px;
@@ -81,11 +80,14 @@ h4 {
   border-bottom-color: #E8700C;
   padding: 0 40px; }
 
+.c-header2:nth-child(3) {
+  align-items: flex-end; }
+
 .c-header1 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 40%; }
+  width: 10%; }
 
 .c-header2 {
   display: flex;
@@ -229,9 +231,9 @@ li.c-dropdown {
   /* Stay in place */
   z-index: 1;
   /* Stay on top */
-  top: 0;
-  right: 0;
-  background-color: grey;
+  top: 160px;
+  left: 0;
+  background-color: #3B4E7F;
   /* Black*/
   overflow-x: hidden;
   /* Disable horizontal scroll */
@@ -258,9 +260,8 @@ li.c-dropdown {
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px; }
+  left: 0;
+  font-size: 30px; }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
@@ -1015,19 +1016,24 @@ a:hover {
   /*hiding nav bar*/
   .respon-navbar {
     display: none; }
+  .respon-icon {
+    margin-top: 15px;
+    padding-right: 20px; }
   /*change from big-navigation to small-navigation*/
   .small-navigation {
-    display: flex;
-    justify-content: center; }
+    display: flex; }
   .big-navigation {
     display: none; }
   .in-out-button {
-    align-items: flex-end; }
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row; }
   .logolink {
     width: 100%;
     justify-content: space-between; }
   .gc-eurologo {
-    margin: 10px; }
+    margin: 10px;
+    padding-right: 17%; }
   .gc-logotitle {
     display: flex; }
   .h1 br {
@@ -1035,12 +1041,11 @@ a:hover {
   .p-header {
     align-items: center; }
   .c-header1 {
-    width: 50%;
-    flex-grow: 1;
-    justify-content: space-between; }
+    width: 75%;
+    flex-grow: 1; }
   .c-header2 {
-    width: 31%;
-    flex-direction: row-reverse; }
+    width: 20%;
+    flex-direction: column; }
   .maincontent {
     display: flex;
     flex-direction: row;
@@ -1162,10 +1167,6 @@ a:hover {
   .smallimages {
     max-width: 100%;
     max-height: 35%; }
-  .in-out-button {
-    flex-direction: column;
-    height: 119px;
-    justify-content: center; }
   .c-header2 {
     width: 57%; } }
 

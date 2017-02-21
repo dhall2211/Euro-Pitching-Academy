@@ -17,19 +17,25 @@
     .respon-navbar {
         display: none;
     }
+    .respon-icon{
+        margin-top: 15px;
+        padding-right: 20px;
+    }
     /*change from big-navigation to small-navigation*/
 
 
     .small-navigation {
         display: flex;
-        justify-content: center;
+
     }
 
     .big-navigation {
         display: none;
     }
     .in-out-button{
-        align-items: flex-end;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: row;
     }
 
     .logolink {
@@ -39,6 +45,7 @@
 
     .gc-eurologo {
         margin: 10px;
+        padding-right: 17%;
     }
 
     .gc-logotitle {
@@ -56,14 +63,14 @@
     }
 
     .c-header1 {
-        width: 50%;
+        width: 75%;
         flex-grow: 1;
-        justify-content: space-between;
+        
     }
 
     .c-header2 {
-        width: 31%;
-        flex-direction: row-reverse;
+        width: 20%;
+        flex-direction: column;
     }
 
     .maincontent {
@@ -242,11 +249,7 @@
         max-width: 100%;
         max-height: 35%;
     }
-    .in-out-button{
-        flex-direction: column;
-        height: 119px;
-        justify-content: center;
-    }
+
     .c-header2{
         width:57%;
     }

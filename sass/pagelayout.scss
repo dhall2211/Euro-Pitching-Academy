@@ -84,8 +84,7 @@ h4 {
 /*headers*/
 .p-header {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     background-color: #3B4E7F;
     width: 100%;
     height: 150px;
@@ -95,12 +94,16 @@ h4 {
     border-bottom-color: #E8700C;
     padding: 0 40px;
 }
+.c-header2:nth-child(3){
+    align-items: flex-end;
+
+}
 
 .c-header1 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width:40%;
+    width:10%;
 }
 
 .c-header2 {
@@ -268,9 +271,9 @@ li.c-dropdown {
     /* Stay in place */
     z-index: 1;
     /* Stay on top */
-    top: 0;
-    right: 0;
-    background-color: grey;
+    top: 160px;
+    left: 0;
+    background-color: #3B4E7F;
     /* Black*/
     overflow-x: hidden;
     /* Disable horizontal scroll */
@@ -297,9 +300,9 @@ li.c-dropdown {
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    left: 0;
+    font-size: 30px;
+
 }
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
