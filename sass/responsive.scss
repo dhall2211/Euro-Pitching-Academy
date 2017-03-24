@@ -50,6 +50,7 @@
 
     .gc-logotitle {
         display: flex;
+        position: static;
     }
 
     .h1 {
@@ -62,14 +63,9 @@
         align-items: center;
     }
 
-    .c-header1 {
-        width: 75%;
-        flex-grow: 1;
-        
-    }
+
 
     .c-header2 {
-        width: 20%;
         flex-direction: column;
     }
 
@@ -301,6 +297,10 @@
     }
 }
 @media screen and (max-width:524px) {
+    .small-navigation{
+        margin-top: 9px;
+        margin-bottom: 12px;
+    }
     .logo {
         height: 95px;
         width: 95px;

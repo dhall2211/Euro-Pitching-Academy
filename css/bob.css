@@ -70,6 +70,7 @@ h4 {
 /*headers*/
 .p-header {
   display: flex;
+  position: relative;
   align-items: center;
   background-color: #3B4E7F;
   width: 100%;
@@ -78,22 +79,26 @@ h4 {
   border-bottom-style: solid;
   border-bottom-width: 10px;
   border-bottom-color: #E8700C;
-  padding: 0 40px; }
-
-.c-header2:nth-child(3) {
-  align-items: flex-end; }
+  padding: 0 40px;
+  justify-content: space-between; }
 
 .c-header1 {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  width: 10%; }
+  justify-content: flex-start; }
+
+.gc-logotitle {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  height: 150px;
+  left: 160px;
+  bottom: 5px;
+  align-items: center; }
 
 .c-header2 {
   display: flex;
-  justify-content: flex-end;
-  flex-direction: column-reverse;
-  height: 150px; }
+  flex-direction: column-reverse; }
   .c-header2 .in-out-button {
     flex-grow: 2; }
 
@@ -223,7 +228,10 @@ li.c-dropdown {
 /*end of Nav bar*/
 /* The side navigation menu */
 .sidenav {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 158px;
   /* 100% Full-height */
   width: 0;
   /* 0 width - change this with JavaScript */
@@ -231,7 +239,7 @@ li.c-dropdown {
   /* Stay in place */
   z-index: 1;
   /* Stay on top */
-  top: 160px;
+  top: 158px;
   left: 0;
   background-color: #3B4E7F;
   /* Black*/
@@ -577,40 +585,9 @@ span.psw {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 10px;
   flex-wrap: wrap; }
 
 /* Home Page Carousel */
-.slider {
-  display: flex;
-  height: auto;
-  max-width: 90%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-
-.slider1 {
-  display: none;
-  background-image: url("../images/slider1.png");
-  width: 100%;
-  height: 93%;
-  background-size: cover; }
-
-.slider2 {
-  display: flex;
-  background-image: url("../images/slider2.png");
-  width: 100%;
-  height: 93%;
-  background-size: cover; }
-
-.slider3 {
-  display: none;
-  background-image: url("../images/slider3.jpg");
-  width: 85%;
-  height: 93%;
-  background-size: cover; }
-
-.tabslider1 {
-  display: none; }
-
 /* Home Page Navigation Box-Button */
 .nav-box {
   display: flex;
@@ -673,27 +650,71 @@ a:hover {
 
 /*program*/
 .heropic_p {
-  background-image: url("../images/AUT_koller_Fotor.jpg");
+  background-image: url("../images/AUT_Team_Fotor.jpg");
   height: 100%;
-  width: 94%;
-  margin-top: 10px;
+  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-left: 45px;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .great-text-pro {
-  top: 15;
   position: absolute;
   font-size: 50px;
-  bottom: 0;
+  bottom: 15;
   width: 100%;
   text-align: center;
   color: white; }
 
+.content_decription {
+  font-size: 24px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  line-height: 40px;
+  text-align: justify; }
+
 /*about*/
+/* css for mission statement */
+.mission-image {
+  position: relative;
+  display: flex;
+  margin-bottom: 30px; }
+
+.great-text {
+  position: absolute;
+  font-size: 50px;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+  left: 30px;
+  color: white; }
+
+.statement-heading {
+  background-image: url("../images/mound.jpg");
+  width: 100%;
+  height: 435px;
+  margin: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.missioncontent {
+  width: 90%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 55px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
 /*advisoryboard*/
 /*css for advisoryboard */
 .c-advisorymaincon {
@@ -824,46 +845,6 @@ a:hover {
 
 .gc-rating {
   display: flex; }
-
-/* css for mission statement */
-.mission_image {
-  position: relative;
-  display: inline;
-  margin-bottom: 30px; }
-
-.great-text {
-  position: absolute;
-  font-size: 50px;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  color: white; }
-
-.mission_statement_heading {
-  background-image: url("../images/mound.jpg");
-  width: 100%;
-  height: 435px;
-  margin: 10px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-
-.content_decription {
-  width: 90%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 55px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 20px;
-  text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-
-.mission_image {
-  margin-bottom: 30px; }
 
 .top_headline {
   display: flex;
@@ -1035,16 +1016,13 @@ a:hover {
     margin: 10px;
     padding-right: 17%; }
   .gc-logotitle {
-    display: flex; }
+    display: flex;
+    position: static; }
   .h1 br {
     display: none; }
   .p-header {
     align-items: center; }
-  .c-header1 {
-    width: 75%;
-    flex-grow: 1; }
   .c-header2 {
-    width: 20%;
     flex-direction: column; }
   .maincontent {
     display: flex;
@@ -1202,6 +1180,9 @@ a:hover {
     max-height: 35%; } }
 
 @media screen and (max-width: 524px) {
+  .small-navigation {
+    margin-top: 9px;
+    margin-bottom: 12px; }
   .logo {
     height: 95px;
     width: 95px; }

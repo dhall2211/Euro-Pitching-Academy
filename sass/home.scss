@@ -2,46 +2,13 @@
   display:flex;
   justify-content: center;
   width:100%;
-  margin-top:10px;
   flex-wrap:wrap;
 }
 
 
 
 /* Home Page Carousel */
-.slider {
-  display:flex;
-  height:auto;
-  max-width:90%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-  0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
-.slider1 {
-  display: none;
-  background-image: url("../images/slider1.png");
-  width:100%;
-  height:93%;
-  background-size:cover;
-}
-.slider2{
-    display:flex;
-    background-image: url("../images/slider2.png");
-    width:100%;
-    height:93%;
-    background-size:cover;
-}
-.slider3{
-    display:none;
-    background-image: url("../images/slider3.jpg");
-    width:85%;
-    height:93%;
-    background-size:cover;
-
-}
-.tabslider1{
-    display:none;
-}
 
 
 /* Home Page Navigation Box-Button */
