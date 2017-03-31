@@ -1,13 +1,31 @@
 /*program*/
 .heropic_p{
-  background-image: url("../images/AUT_koller_Fotor.jpg");
+  background-image: url("../images/AUT_Team_Fotor.jpg");
   height:100%;
-  width:94%;
-  margin-top:10px;
+  width:100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-left:45px;
+
+  position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
   0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.great-text-pro{
+    position: absolute;
+    font-size: 50px;
+    bottom: 15;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.content_decription {
+    font-size: 24px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 40px;
+    text-align: justify;
+
 }

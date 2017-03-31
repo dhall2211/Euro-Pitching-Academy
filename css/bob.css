@@ -62,7 +62,7 @@ h4 {
   background-color: white;
   height: 100%;
   width: 100%;
-  opacity: .5;
+  opacity: 0.5;
   z-index: 2; }
   .background-shade.active {
     display: flex; }
@@ -70,8 +70,8 @@ h4 {
 /*headers*/
 .p-header {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  position: relative;
+  align-items: center;
   background-color: #3B4E7F;
   width: 100%;
   height: 150px;
@@ -79,16 +79,28 @@ h4 {
   border-bottom-style: solid;
   border-bottom-width: 10px;
   border-bottom-color: #E8700C;
-  padding: 0 75px; }
+  padding: 0 40px;
+  justify-content: space-between; }
 
 .c-header1 {
   display: flex;
   align-items: center;
   justify-content: flex-start; }
 
+.gc-logotitle {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  height: 150px;
+  left: 160px;
+  bottom: 5px;
+  align-items: center; }
+
 .c-header2 {
   display: flex;
-  width: auto; }
+  flex-direction: column-reverse; }
+  .c-header2 .in-out-button {
+    flex-grow: 2; }
 
 .logolink {
   display: flex;
@@ -96,15 +108,11 @@ h4 {
   color: inherit;
   text-decoration: none; }
 
-.gc-eurologo {
-  margin-top: 16px;
-  border-style: solid;
-  border-radius: 5px;
-  border-width: thick;
-  margin-right: 10px;
-  height: 110px; }
-
 /* navigation bar*/
+.smallimages {
+  display: flex;
+  justify-content: center; }
+
 .p-mainmenu {
   list-style-type: none;
   display: flex;
@@ -129,7 +137,7 @@ h4 {
   display: none;
   flex-direction: column;
   z-index: 1;
-  height: 116px; }
+  position: relative; }
 
 .small-menuitems {
   display: flex;
@@ -140,21 +148,23 @@ h4 {
   display: flex;
   justify-content: space-between; }
 
+.big-navigation {
+  display: flex;
+  align-self: flex-end; }
+
 .respon-icon {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  height: 80px;
-  width: 125px; }
+  align-items: flex-end; }
 
 .respon-navbar {
   background-color: grey;
-  width: 265px;
+  width: 37%;
   border-radius: 2px;
   position: absolute;
-  right: 0px;
+  right: 0;
   top: 144px;
-  height: 38%; }
+  height: 48%; }
 
 .gc-dropbtn,
 li a {
@@ -183,10 +193,10 @@ li.c-dropdown {
   left: 50px;
   top: 62px; }
 
-.slide1 {
-  background-image: url("../images/slider/mainimage_bigsize.jpg");
-  width: 100%;
-  background-size: contain; }
+.maincontent {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
 
 .gc-dropdown-content {
   position: absolute;
@@ -216,6 +226,261 @@ li.c-dropdown {
   display: flex; }
 
 /*end of Nav bar*/
+/* The side navigation menu */
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 158px;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 158px;
+  left: 0;
+  background-color: #3B4E7F;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */ }
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: flex;
+  transition: 0.3s; }
+
+/* When you mouse over the navigation links, change their color */
+.offcanvas a:focus,
+.sidenav a:hover {
+  color: #f1f1f1; }
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 30px; }
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px; }
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box; }
+
+/* Set a style for all buttons */
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336; }
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%; }
+
+/* Add padding to container elements */
+.container {
+  padding: 16px; }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px; }
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */ }
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  color: #000;
+  font-size: 40px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer; }
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+/*login button*/
+/* Full-width input fields */
+input[type=password],
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box; }
+
+.in-out-button {
+  display: flex;
+  width: 100%;
+  height: 65px;
+  flex-direction: row;
+  justify-content: flex-end; }
+
+/* Set a style for all buttons */
+.button2 {
+  display: flex;
+  background-color: #3B4E7F;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  padding-right: 18px; }
+
+.button1 {
+  display: flex;
+  background-color: #3B4E7F;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  padding-right: 20px; }
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336; }
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px;
+  position: relative; }
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%; }
+
+.container {
+  padding: 16px; }
+
+span.psw {
+  float: right;
+  padding-top: 16px; }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px; }
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15%;
+  /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%;
+  /* Could be more or less, depending on screen size */ }
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold; }
+
+.close:focus,
+.close:hover {
+  color: red;
+  cursor: pointer; }
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s; }
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0); }
+  to {
+    -webkit-transform: scale(1); } }
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none; }
+  .cancelbtn {
+    width: 100%; } }
+
 /*footers*/
 .p-footer1 {
   display: flex;
@@ -246,13 +511,23 @@ li.c-dropdown {
 .c-botleftpad p {
   padding-left: 20px; }
 
+.fa-4x {
+  display: none; }
+
+.smallitalic {
+  font-style: italic;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  font-size: 14px; }
+
 .c-location {
   display: flex;
   padding: 2px;
   flex-direction: column; }
 
 .c-location p {
-  margin: 5px; }
+  margin: 5px;
+  font-weight: lighter; }
 
 .c-location h5 {
   margin: 3px;
@@ -299,20 +574,20 @@ li.c-dropdown {
 .gc-icon3-footer2:hover {
   color: #3B4E7F; }
 
+.logo {
+  height: 110px;
+  width: 110px;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: thick; }
+
 .mainimages {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 10px;
   flex-wrap: wrap; }
 
 /* Home Page Carousel */
-.slider {
-  display: flex;
-  height: auto;
-  max-width: 90%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-
 /* Home Page Navigation Box-Button */
 .nav-box {
   display: flex;
@@ -324,9 +599,34 @@ li.c-dropdown {
   border: 3px solid #77797f;
   border-radius: 4px;
   transition: 0.3s;
-  width: 30%;
+  width: 33%;
   margin: 4px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.image-a {
+  display: flex;
+  background-image: url("../images/npabanner.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 40%;
+  left: 0;
+  bottom: 0; }
+
+.image-b {
+  display: flex;
+  background-image: url("../images/baseballthrowing.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 40%; }
+
+.image-c {
+  display: flex;
+  background-image: url("../images/baseballthrowing.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 40%; }
 
 .nav-itembot h2 {
   height: 43px; }
@@ -338,7 +638,8 @@ a:hover {
   width: 100%; }
 
 .nav-itembot a {
-  display: block;
+  display: flex;
+  flex-direction: column;
   color: black;
   text-align: center;
   width: 100%; }
@@ -349,17 +650,163 @@ a:hover {
 
 /*program*/
 .heropic_p {
-  background-image: url("../images/AUT_koller_Fotor.jpg");
+  background-image: url("../images/AUT_Team_Fotor.jpg");
   height: 100%;
-  width: 94%;
-  margin-top: 10px;
+  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-left: 45px;
+  position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
+.great-text-pro {
+  position: absolute;
+  font-size: 50px;
+  bottom: 15;
+  width: 100%;
+  text-align: center;
+  color: white; }
+
+.content_decription {
+  font-size: 24px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  line-height: 40px;
+  text-align: justify; }
+
 /*about*/
+/* css for mission statement */
+.aboutheading {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  color: #3B4E7F;
+  border-bottom: 1px  solid;
+  border-color: #E8780C;
+  width: 80%; }
+
+.coachadvis {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  color: #3B4E7F;
+  border-bottom: 1px  solid;
+  border-color: #E8780C;
+  width: 80%; }
+
+.teamh, .coachh, .advisoryh {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+
+.bioname {
+  color: #E8780C; }
+
+.mission-image {
+  position: relative;
+  display: flex;
+  margin-bottom: 30px; }
+
+.great-text {
+  position: absolute;
+  font-size: 50px;
+  bottom: 0;
+  width: 100%;
+  text-align: left;
+  left: 30px;
+  color: white; }
+
+.statement-heading {
+  background-image: url("../images/mound.jpg");
+  width: 100%;
+  height: 435px;
+  margin: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.missioncontent {
+  width: 90%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 55px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+/*our staff*/
+.ourstaff {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.imageandbio {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.team {
+  display: flex;
+  justify-content: center;
+  width: 50%; }
+
+.portraitimage {
+  display: none;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  padding: 12px;
+  border: 3px solid #E8780C;
+  outline-style: solid;
+  outline-color: black;
+  outline-width: thin;
+  background-image: url("../images/baseball_portrait.jpg");
+  height: 68%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%; }
+
+.nametag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+  z-index: 2; }
+
+.staffbio {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 50%;
+  padding: 4px; }
+
+.thumbnail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.coaches {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px; }
+
+.advisoryboard {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px; }
+
 /*advisoryboard*/
 /*css for advisoryboard */
 .c-advisorymaincon {
@@ -491,46 +938,6 @@ a:hover {
 .gc-rating {
   display: flex; }
 
-/* css for mission statement */
-.mission_image {
-  position: relative;
-  display: inline;
-  margin-bottom: 30px; }
-
-.great-text {
-  position: absolute;
-  font-size: 50px;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  color: white; }
-
-.mission_statement_heading {
-  background-image: url("../images/mound.jpg");
-  width: 100%;
-  height: 435px;
-  margin: 10px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-
-.content_decription {
-  width: 90%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 55px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 20px;
-  text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-
-.mission_image {
-  margin-bottom: 30px; }
-
 .top_headline {
   display: flex;
   width: 100%;
@@ -619,13 +1026,6 @@ a:hover {
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
-.ballback {
-  background-image: url("../images/background baseball_Fotor.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover; }
-
 .shopmaincon {
   display: flex;
   flex-direction: column;
@@ -638,20 +1038,18 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   background-color: #77797f;
-  opacity: 0.8;
-  height: 315px;
-  width: 70%;
+  height: 35vh;
+  width: 70vh;
   color: white;
   margin: 60px; }
 
 .shoptext {
   width: 100%;
   text-align: center;
-  height: 150px;
+  height: 150vh;
   line-height: 1.8;
   display: flex;
   flex-direction: column;
-  margin: 50px;
   color: white; }
 
 .content {
@@ -677,61 +1075,251 @@ a:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 /*zhaw*/
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1325px) {
+  .orangetext {
+    font-size: 25px;
+    white-space: nowrap; }
+  .p-footer1 {
+    height: 30%; }
+    .p-footer1 p,
+    .p-footer1 ul {
+      font-size: 15px; } }
+
+@media screen and (max-width: 1305px) {
   /*hiding nav bar*/
   .respon-navbar {
     display: none; }
+  .respon-icon {
+    margin-top: 15px;
+    padding-right: 20px; }
   /*change from big-navigation to small-navigation*/
   .small-navigation {
     display: flex; }
   .big-navigation {
     display: none; }
+  .in-out-button {
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row; }
   .logolink {
     width: 100%;
     justify-content: space-between; }
   .gc-eurologo {
-    margin: 10px; }
+    margin: 10px;
+    padding-right: 17%; }
   .gc-logotitle {
-    display: flex; }
+    display: flex;
+    position: static; }
   .h1 br {
     display: none; }
   .p-header {
     align-items: center; }
-  .c-header1 {
-    flex-grow: 1;
-    justify-content: space-between; }
+  .c-header2 {
+    flex-direction: column; }
   .maincontent {
-    display: flex; }
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 112px;
+    position: relative; }
   .mainimages {
-    max-width: 60%;
-    margin-top: 0; }
+    display: flex;
+    max-height: 72%;
+    max-width: 63%;
+    margin-top: 0;
+    width: 100%; }
   .slider {
     max-width: 100%; }
+  .slider1 {
+    display: none; }
+  .slider2 {
+    display: none; }
+  .slider3 {
+    display: none; }
+  .tabslider1 {
+    display: flex;
+    background-image: url("../images/AUT_Bickel_ipad.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 75%;
+    width: 100%;
+    margin-top: 0; }
   .smallimages {
     display: flex;
     flex-direction: column;
-    max-width: 40%; }
+    max-width: 37%;
+    max-height: 73%;
+    width: 100%;
+    height: auto; }
   .nav-itembot {
     width: 0;
     margin: 0;
     border: 0; }
   .image-a {
-    display: none;
-    width: 100%; }
+    display: flex;
+    background-image: url("../images/npabanner.jpg");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    background-position: center;
+    left: 0;
+    bottom: 0;
+    background-repeat: no-repeat; }
   .image-b {
-    width: 100%; }
+    display: flex;
+    background-image: url("../images/baseballthrowing.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100%;
+    height: 62em;
+    background-repeat: no-repeat; }
   .image-c {
-    width: 100%; }
+    display: flex;
+    background-image: url("../images/baseballthrowing.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100%;
+    height: 62em;
+    background-repeat: no-repeat; }
   .nav-itembot a {
+    width: 100%; }
+  .nav-itembot {
+    border-radius: 0; }
+  .c-item1-footer1 p {
+    font-size: 12px; } }
+
+@media screen and (max-width: 1020px) {
+  .p-footer1 {
+    height: 300px;
+    flex-wrap: wrap; }
+  .c-item1-footer1 {
+    order: 1;
+    width: 100%;
+    height: 122px;
+    justify-content: center;
+    margin-top: 8px; }
+  
+  .c-botleftpad p {
+    font-size: 12px; }
+  .orangetext {
+    font-size: 35px;
+    word-spacing: 0.05em;
+    letter-spacing: 0.05em;
+    font-weight: 500; }
+  .smallitalic {
+    font-size: 12px;
+    font-style: italic; }
+  .c-botleftpad {
+    flex-wrap: nowrap; }
+  .c-item2-footer1 {
+    width: 50%;
+    justify-content: center;
+    margin-top: 6px; }
+  .c-item3-footer1 {
+    width: 50%;
+    justify-content: center;
+    margin-top: 6px; } }
+
+@media screen and (max-width: 980px) {
+  .gc-logotitle {
+    display: none; }
+  .c-icon {
+    width: 100%; }
+  .maincontent {
+    flex-direction: column; }
+  .mainimages {
+    max-width: 100%;
+    max-height: 75%; }
+  .tabslider1 {
+    display: flex;
+    height: 79%; }
+  .smallimages {
+    max-width: 100%;
+    max-height: 35%; }
+  .c-header2 {
+    width: 57%; } }
+
+@media screen and (max-width: 630px) {
+  .p-footer1 {
+    flex-direction: column;
+    height: 475px; }
+  .c-item2-footer1 {
+    width: 100%;
+    justify-content: space-around; }
+  .c-item3-footer1 {
+    width: 100%;
+    justify-content: space-around; }
+  .fa-4x {
+    display: flex;
+    align-self: center;
+    color: #E8780C; }
+  .maincontent {
+    flex-direction: column; }
+  .mainimages {
+    max-width: 100%; }
+  .tabslider1 {
+    display: flex;
+    background-image: url("../images/AUT_Bickel.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 310px;
+    width: 100%;
+    margin-top: 0; }
+  .smallimages {
+    max-width: 100%;
+    max-height: 35%; } }
+
+@media screen and (max-width: 524px) {
+  .small-navigation {
+    margin-top: 9px;
+    margin-bottom: 12px; }
+  .logo {
+    height: 95px;
+    width: 95px; }
+  .p-header {
+    padding: 0 30px; }
+  .gc-eurologo {
+    margin: 0; }
+  .logolink {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; }
+  .mainimages {
+    height: auto; }
+  .tabslider1 {
+    max-height: 20%; }
+  .smallimages {
+    max-width: 100%;
+    max-height: 20%; }
+  .image-a {
+    height: 23%; }
+  .image-b {
+    height: 100%; }
+  .image-c {
+    height: 100%; }
+  .orangetext {
+    font-size: 25px; }
+  .p-footer1 p,
+  .p-footer1 ul {
+    font-size: 12px; }
+  .orangeblocktext {
+    font-size: 25px; }
+  .shoptext p {
+    font-size: 15px; }
+  .colorbox {
     width: 100%; } }
 
-@media screen and (max-width: 1325px) {
-  .orangetext {
-    font-size: 25px;
-    white-space: nowrap; } }
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px; }
+  .sidenav a {
+    font-size: 18px; } }
 
-@media screen and (max-width: 1024px) {
-  /*main break point*/ }
-
-@media screen and (max-width: 768px) {
-  /*main beeak point2*/ }
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn,
+  .signupbtn {
+    width: 100%; } }

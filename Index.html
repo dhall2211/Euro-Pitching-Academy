@@ -3,232 +3,301 @@
 <head>
     <title>European Pitching Academy
     </title>
+    <title>Bootstrap slider</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin:none;
+  }
+  </style>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/bob.css" rel="stylesheet" />
+    <link href="js/content.js" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
+
+
 </head>
 
 <body>
-    <div id="background-shade" class="background-shade">
-    </div>
 
+    <!-- id main is for the nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <div class="gf-layout">
         <!-- heading content -->
         <div class="p-header">
             <div class="c-header1">
                 <div class="gc-eurologo">
                     <a class="logolink" href="index.html">
-                        <img class="logo" src="images/europitch_Logo_Fotor.jpg" style="height:110px; width:110px;">
+                        <img class="logo" src="images/europitch_Logo_Fotor.jpg">
                         </img>
                     </a>
                 </div>
-                <div class="gc-logotitle">
-                    <h1 class="h1"><br>European</br> Pitching Academy</h1>
-                </div>
 
-                <div class="small-navigation">
-                    <div class="respon-icon">
-                        <img src="./images/ballmenuicon.png" alt="menuicon" style="height:90px;width:90px;" />
-                    </div>
-                    <ul class="respon-navbar">
-
-                        <li class="small-menuitems">
-                            <a href="views/programs.html">PROGRAMS
-                              <div class= "plus">
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                              </div>
-                            </a>
-
-                            <a href="views/austria.html">AUSTRIA</a>
-                            <a href="views/bavaria.html">BAVARIA</a>
-                            <a href="views/swiss.html">SWITZERLAND</a>
-                        </li>
-
-                        <li class="small-menuitems">
-                            <a href="views/schedule.html">
-                              SCHEDULE
-                            </a>
-                        </li>
-
-                        <li class="small-menuitems">
-                            <div class="">
-                                <a href="views/shop.html">
-                                  SHOP
-                                </a>
-                            </div>
-                        </li>
-
-                        <li class="small-menuitems">
-                            <a href="views/news.html">
-                              MEDIA
-                              <div class= "plus">
-                                <i class="fa fa-plus" aria-hidden="true"></i>
-                              </div>
-                            </a>
-                        </li>
-
-                        <li class="small-menuitems">
-                            <div class="">
-                                <a href="views/mlb.html">MLB NETWORK</a>
-                                <a href="views/blog.html">BLOG</a>
-                            </div>
-                        </li>
-
-                        <li class="small-menuitems">
-                            <a href="views/aboutus.html">
-                              ABOUT US
-                              <div class= "plus">
-                              <i class="fa fa-plus" aria-hidden="true"></i>
-                              </div>
-                            </a>
-
-                            <div class="">
-                                <a href="views/missionstatement.html">WHO ARE WE</a>
-                                <a href="views/ourstaff.html">OUR STAFF</a>
-                                <a href="views/advisoryboard.html">ADVISORY BOARD</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+            </div>
+            <!--end of header 1 content -->
+            <div class="gc-logotitle">
+                <h1 class="h1"><br>European</br> Pitching Academy</h1>
             </div>
             <div class="c-header2">
+                <div class="small-navigation">
+                    <div class="sidenav" id="mySidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                        <a href="views/programs.html">PROGRAMS
+                            <div class= "plus">
+
+                            </div>
+                        </a>
+                        <a href="views/austria.html">AUSTRIA</a>
+                        <a href="views/bavaria.html">BAVARIA</a>
+                        <a href="views/swiss.html">SWITZERLAND</a>
+                        <a href="views/schedule.html">SCHEDULE</a>
+                        <a href="views/shop.html">SHOP</a>
+                        <a href="views/media.html">MEDIA
+                            <div class= "plus">
+
+                            </div>
+                        </a>
+                        <a href="views/mlb.html">MLB NETWORK</a>
+                        <a href="views/blog.html">BLOG</a>
+                        <a href="views/aboutus.html">ABOUT US
+                            <div class= "plus">
+                            </div>
+                                </a>
+                        <a href="views/missionstatement.html">WHO ARE WE</a>
+                        <a href="views/ourstaff.html">OUR STAFF</a>
+                        <a href="views/advisoryboard.html">ADVISORY BOARD</a>
+                    </div>
+                    <!-- Use any element to open the sidenav-->
+                    <span onclick="openNav()">
+                            <div class="respon-icon">
+                                <img src="./images/ballmenuicon.png" alt="menuicon" style="height:70px;width:70px;" />
+                            </div>
+                        </span>
+                </div>
+
 
                 <div class="big-navigation">
                     <ul class="p-mainmenu">
+                    <li class="c-mainmenuitems dropdown">
+                        <a href="views/programs.html" class="gc-dropbtn">PROGRAMS
+                            </a>
+                        <div class="gc-dropdown-content programs">
+                            <a href="views/austria.html">AUSTRIA</a>
+                            <a href="views/bavaria.html">BAVARIA</a>
+                            <a href="views/swiss.html">SWITZERLAND</a>
+                        </div>
+                    </li>
+                    <li class="c-mainmenuitems">
+                        <a href="views/schedule.html">SCHEDULE</a>
+                    </li>
 
-                        <li class="c-mainmenuitems dropdown">
-                            <a href="views/programs.html" class="gc-dropbtn">PROGRAMS
+                    <li class="c-mainmenuitems">
+                        <div class="nav-itemtop">
+                            <a href="views/shop.html">SHOP</a>
+                        </div>
+                    </li>
+
+                    <li class="c-mainmenuitems dropdown">
+                        <a href="views/media.html">MEDIA
                     </a>
-                            <div class="gc-dropdown-content programs">
-                                <a href="views/austria.html">AUSTRIA</a>
-                                <a href="views/bavaria.html">BAVARIA</a>
-                                <a href="views/swiss.html">SWITZERLAND</a>
-                            </div>
-                        </li>
+                        <div class="gc-dropdown-content media">
+                            <a href="views/mlb.html">MLB NETWORK</a>
+                            <a href="views/blog.html">BLOG</a>
+                        </div>
+                    </li>
 
 
-                        <li class="c-mainmenuitems">
-                            <a href="views/schedule.html">
-                      SCHEDULE
-                    </a>
-                        </li>
-
-                        <li class="c-mainmenuitems">
-                            <div class="nav-itemtop">
-                                <a href="views/shop.html">SHOP
-                    </a>
-                            </div>
-                        </li>
-
-                        <li class="c-mainmenuitems dropdown">
-                            <a href="views/news.html">MEDIA
-                    </a>
-                            <div class="gc-dropdown-content media">
-                                <a href="views/mlb.html">MLB NETWORK</a>
-                                <a href="views/blog.html">BLOG</a>
-                            </div>
-                        </li>
-
-
-                        <li class="c-mainmenuitems dropdown">
-                            <a href="views/aboutus.html" class="gc-dropbtn">
-                      ABOUT US
-                    </a>
-                            <div class="gc-dropdown-content aboutus">
-                                <a href="views/missionstatement.html">WHO ARE WE</a>
-                                <a href="views/ourstaff.html">OUR STAFF</a>
-                                <a href="views/advisoryboard.html">ADVISORY BOARD</a>
-                            </div>
-
-                        </li>
-                    </ul>
-                </div>
-                <!--responsive menu-->
-
-
-                <!--this is where the log in button will go-->
+                    <li class="c-mainmenuitems dropdown">
+                        <a href="views/aboutus.html" class="gc-dropbtn">ABOUT US</a>
+                        <div class="gc-dropdown-content aboutus">
+                            <a href="views/missionstatement.html">WHO ARE WE</a>
+                            <a href="views/ourstaff.html">OUR STAFF</a>
+                            <a href="views/advisoryboard.html">ADVISORY BOARD</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </div>
+            <!--responsive menu-->
+        <div class=in-out-button>
+            <button class="button2" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</button>
+            <div id="id02" class="modal">
+                <form class="modal-content animate" action="action_page.php">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="images/rolliavatar.jpg" alt="Avatar" class="avatar">
+                    </div>
 
-    <!-- nav bar-->
+                    <div class="container">
+                        <label><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
 
-<div class="maincontent">
-    <div class="mainimages">
-        <!-- slide show carousel-->
+                        <label><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
 
-        <div class="slider">
+                        <button type="submit">Login</button>
+                        <input type="checkbox" checked="checked"> Remember me
+                    </div>
 
-
-
-            <div class="w3-content w3-section" style="max-width:100%">
-                <img class="mySlides" src="images/AUT_moritz_Fotor.jpg" style="width:100%;">
-                <img class="mySlides" src="images/bavaria/bavaria_cover_photo_Fotor.jpg" style="width:100%;">
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                    </div>
+                </form>
             </div>
+            <!-- Button to open the modal login form -->
+
+            <button class="button1" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+            <div id="id01" class="modal">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                <form class="modal-content animate" action="/action_page.php">
+                    <div class="container">
+                        <label><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+
+                        <label><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <label><b>Repeat Password</b></label>
+                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                        <input type="checkbox" checked="checked"> Remember me
+                        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+                        <div class="clearfix">
+                            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                            <button type="submit" class="signupbtn">Sign Up</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- The Sign in Model -->
+
         </div>
+        </div>
+    </div>
+    </div>
+</div>
 
+    <!--end of navbars, signin, and signup-->
 
+    <div class="maincontent">
+        <div class="mainimages">
+            <!-- slide show carousel-->
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/kollerslide.jpg" alt="slider 1">
+      <div class="carousel-caption">
+        <h1>Feel the Experience!</h1>
+        <p>Sign up to join our community of players and coaches. You will recieve access to some of the top pitching training and resources in Europe.</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/kidslide.jpg" alt="slider 2">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/slidermo.jpg" alt="slider 3">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/seanslider.jpg" alt="slider 4">
+      <div class="carousel-caption">
+        ...
+      </div>
     </div>
 
-    <!-- navigational buttons -->
-    <div class="smallimages">
-        <div class="nav-itembot image-b">
-            <a href="views/program.html">
-
-                <img class="nav-itembot-image" src="images/baseballthrowing.jpg" alt="acad" />
-            </a>
-
-        </div>
-        <div class="nav-itembot image-c">
-            <a href="views/zhaw.html">
-
-                <img class="nav-itembot-image" src="images/baseballthrowing.jpg" alt="Lab" />
-            </a>
-        </div>
-
-        <div class="nav-itembot image-a">
-            <a href="views/npa.html">
-
-                <img class="nav-itembot-image" src="images/npabanner.jpg" alt="NPA" />
-            </a>
-
-        </div>
 
 
-    </div>
+
+
+
+
+
+
   </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+        </div>
+
+        <!-- navigational buttons -->
+        <div class="smallimages">
+            <div class="nav-itembot image-b">
+                <a href="views/program.html">
+                </a>
+            </div>
+
+            <div class="nav-itembot image-c">
+                <a href="views/zhaw.html">
+                </a>
+            </div>
+
+            <div class="nav-itembot image-a">
+                <a href="views/npa.html">
+                </a>
+            </div>
+
+        </div>
+    </div>
     <!--footer -->
     <div class="p-footer1">
         <div class="c-item1-footer1">
             <div class="c-botleftpad">
                 <h4 class="orangetext">The European Pitching Academy</h4>
-                <p>Great things will be coming soon. You must have faith and trust the process.
+                <p class="smallitalic">Pitching development for the result-oriented athlete. We show you the way to persevere!
                 </p>
             </div>
         </div>
 
         <div class="c-item2-footer1">
+            <i class="fa fa-compass fa-4x" aria-hidden="true"></i>
             <div class="c-location">
-                <h5 class="h5"> Find us!</h4>
-         <p>
-           Official Site: BSC Fekdkirch Cardinals
-         </p>
-         <p>
-           Address: Appenzellerstaße 11a Götzis, AT
-         </p>
-         <p>
-           Email: info@europeanpitching.com
-         </p>
+                <h5 class="h5"> Find us!
+            </h5>
+                <p>Official Site: BSC Fekdkirch Cardinals
+                </p>
+                <p>Address: Appenzellerstaße 11a Götzis, AT
+                </p>
+                <p>Email: info@europeanpitching.com
+                </p>
+
+            </div>
 
         </div>
 
-      </div>
 
-
-      <div class="c-item3-footer1">
-        <div class="c-partners">
-          <h5 class="h5">Our Partners</h4>
+        <div class="c-item3-footer1">
+            <i class="fa fa-handshake-o fa-4x" aria-hidden="true"></i>
+            <div class="c-partners">
+                <h5 class="h5">Our Partners</h4>
           <ul>
              <li>National Pitching Association</li>
              <li>Austian Baseball Federation</li>
@@ -258,32 +327,13 @@
 
 
   </div>
+
+
+
+
+
   <script src="js/content.js">
   </script>
 
-  <script type="text/javascript">
-
-    // print into javascript console of browser
-    console.log('hello from javascript');
-    //create variable background
-    var background;
-    // store DOM-Element (html element) into this background
-    background = document.getElementById("background-shade");
-
-    var baseBallButton;
-    baseBallButton = document.getElementById("baseBallButton");
-
-    // add click event handler on background element (observe it)
-    basebalButton.click({
-      // action goes here - what should happen when menu gets triggered
-      background.addClassName="active";
-      // slide in navigation
-
-
-    });
-
-    background.className += ' active';
-
-  </script>
 
 </body>

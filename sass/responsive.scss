@@ -1,17 +1,41 @@
-@media screen and (max-width:1260px) {
+@media screen and (max-width:1325px) {
+    .orangetext {
+        font-size: 25px;
+        white-space: nowrap;
+    }
+
+    .p-footer1 {
+        p,
+        ul {
+            font-size: 15px;
+        }
+        height: 30%;
+    }
+}
+@media screen and (max-width:1305px) {
     /*hiding nav bar*/
     .respon-navbar {
         display: none;
     }
+    .respon-icon{
+        margin-top: 15px;
+        padding-right: 20px;
+    }
     /*change from big-navigation to small-navigation*/
-    ;
+
 
     .small-navigation {
         display: flex;
+
     }
 
     .big-navigation {
         display: none;
+    }
+    .in-out-button{
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: row;
     }
 
     .logolink {
@@ -21,10 +45,12 @@
 
     .gc-eurologo {
         margin: 10px;
+        padding-right: 17%;
     }
 
     .gc-logotitle {
         display: flex;
+        position: static;
     }
 
     .h1 {
@@ -37,66 +63,323 @@
         align-items: center;
     }
 
-    .c-header1 {
-        flex-grow: 1;
-        justify-content: space-between;
+
+
+    .c-header2 {
+        flex-direction: column;
     }
 
-    .maincontent{
-      display:flex;
-
+    .maincontent {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 112px;
+        position: relative;
     }
 
     .mainimages {
-        max-width:60%;
-        margin-top:0;
+        display: flex;
+        max-height: 72%;
+        max-width: 63%;
+        margin-top: 0;
+        width: 100%;
     }
 
     .slider {
-      max-width:100%;
-
-
+        max-width: 100%;
     }
-    .smallimages{
-      display:flex;
-      flex-direction: column;
-      max-width:40%;
+
+    .slider1 {
+        display: none;
+    }
+
+    .slider2 {
+        display: none;
+    }
+
+    .slider3 {
+        display: none;
+    }
+
+    .tabslider1 {
+        display: flex;
+        background-image: url("../images/AUT_Bickel_ipad.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        max-height: 75%;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .smallimages {
+        display: flex;
+        flex-direction: column;
+        max-width: 37%;
+        max-height: 73%;
+        width: 100%;
+        height: auto;
     }
 
     .nav-itembot {
         width: 0;
-        margin:0;
-        border:0;
+        margin: 0;
+        border: 0;
     }
 
     .image-a {
-      display:none;
+        display: flex;
+        background-image: url("../images/npabanner.jpg");
+        background-size: 100% 100%;
         width: 100%;
+        height: 15%;
+        position: absolute;
+        background-position: center;
+        left: 0;
+        bottom: 0;
+        background-repeat: no-repeat;
     }
 
     .image-b {
-      width:100%
+        display: flex;
+        background-image: url("../images/baseballthrowing.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        width: 100%;
+        height: 62em;
+        background-repeat: no-repeat;
     }
 
     .image-c {
-      width:100%;
+        display: flex;
+        background-image: url("../images/baseballthrowing.jpg");
+        background-size: 100% 100%;
+        background-position: center;
+        width: 100%;
+        height: 62em;
+        background-repeat: no-repeat;
     }
 
     .nav-itembot a {
         width: 100%;
-        
+    }
+
+    .nav-itembot {
+        border-radius: 0;
+    }
+
+    .c-item1-footer1 p {
+        font-size: 12px;
     }
 }
-@media screen and (max-width:1325px) {
+@media screen and (max-width:1020px) {
+    .p-footer1 {
+        height: 300px;
+        flex-wrap: wrap;
+    }
+
+    .c-item1-footer1 {
+        order: 1;
+        width: 100%;
+        height: 122px;
+        justify-content: center;
+        margin-top: 8px;
+    }
+
+    ,
+    .c-botleftpad p {
+        font-size: 12px;
+    }
+
+    .orangetext {
+        font-size: 35px;
+        word-spacing: 0.05em;
+        letter-spacing: 0.05em;
+        font-weight: 500;
+    }
+
+    .smallitalic {
+        font-size: 12px;
+        font-style: italic;
+    }
+
+    .c-botleftpad {
+        flex-wrap: nowrap;
+    }
+
+    .c-item2-footer1 {
+        width: 50%;
+        justify-content: center;
+        margin-top: 6px;
+    }
+
+    .c-item3-footer1 {
+        width: 50%;
+        justify-content: center;
+        margin-top: 6px;
+    }
+}
+@media screen and (max-width:980px) {
+    .gc-logotitle {
+        display: none;
+    }
+
+    .c-icon {
+        width: 100%;
+    }
+
+    .maincontent {
+        flex-direction: column;
+    }
+
+    .mainimages {
+        max-width: 100%;
+        max-height: 75%;
+    }
+
+    .tabslider1 {
+        display: flex;
+        height: 79%;
+    }
+
+    .smallimages {
+        max-width: 100%;
+        max-height: 35%;
+    }
+
+    .c-header2{
+        width:57%;
+    }
+}
+@media screen and (max-width:630px) {
+    .p-footer1 {
+        flex-direction: column;
+        height: 475px;
+    }
+
+    .c-item2-footer1 {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .c-item3-footer1 {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .fa-4x {
+        display: flex;
+        align-self: center;
+        color: #E8780C;
+    }
+
+    .maincontent {
+        flex-direction: column;
+    }
+
+    .mainimages {
+        max-width: 100%;
+    }
+
+    .tabslider1 {
+        display: flex;
+        background-image: url("../images/AUT_Bickel.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        max-height: 310px;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .smallimages {
+        max-width: 100%;
+        max-height: 35%;
+    }
+}
+@media screen and (max-width:524px) {
+    .small-navigation{
+        margin-top: 9px;
+        margin-bottom: 12px;
+    }
+    .logo {
+        height: 95px;
+        width: 95px;
+    }
+
+    .p-header {
+        padding: 0 30px;
+    }
+
+    .gc-eurologo {
+        margin: 0;
+    }
+
+    .logolink {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .mainimages {
+        height: auto;
+    }
+
+    .tabslider1 {
+        max-height: 20%;
+    }
+
+    .smallimages {
+        max-width: 100%;
+        max-height: 20%;
+    }
+
+    .image-a {
+        height: 23%;
+    }
+
+    .image-b {
+        height: 100%;
+    }
+
+    .image-c {
+        height: 100%;
+    }
+
     .orangetext {
         font-size: 25px;
-        white-space: nowrap;
+    }
+
+    .p-footer1 p,
+    .p-footer1 ul {
+        font-size: 12px;
+    }
+
+    .orangeblocktext {
+        font-size: 25px;
+    }
+
+    .shoptext p {
+        font-size: 15px;
+    }
+
+    .colorbox {
+        width: 100%;
     }
 }
-@media screen and (max-width:1024px) {
-    /*main break point*/
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
 }
-@media screen and (max-width:990px) {}
-@media screen and (max-width:768px) {
-    /*main beeak point2*/
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn,
+    .signupbtn{
+    width: 100%;
+    }
 }
