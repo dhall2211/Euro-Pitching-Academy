@@ -1,5 +1,33 @@
 /*about*/
 /* css for mission statement */
+.aboutheading{
+    display: flex;
+    justify-content: center;
+    font-size:50px;
+    color: #3B4E7F;
+    border-bottom: 1px  solid;
+    border-color: #E8780C;
+    width:80%;
+
+}
+.coachadvis{
+    display: flex;
+    justify-content: center;
+    font-size:35px;
+    color: #3B4E7F;
+    border-bottom: 1px  solid;
+    border-color: #E8780C;
+    width:80%;
+
+}
+.teamh, .coachh, .advisoryh{
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
+.bioname{
+    color:#E8780C;
+}
 .mission_main_content{
 
 }
@@ -44,4 +72,82 @@
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
   0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*our staff*/
+
+.ourstaff{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+
+}
+.imageandbio{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.team{
+    display: flex;
+
+    justify-content: center;
+    width:50%;
+
+}
+.portraitimage{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+    padding: 12px;
+    border: 3px solid #E8780C;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: thin;
+    background-image: url('../images/baseball_portrait.jpg');
+    height:68%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:50%;
+}
+
+.nametag{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    z-index: 2;
+
+
+}
+.staffbio{
+    display:flex;
+    flex-direction: column;
+    background-color:white;
+
+    width:50%;
+    padding: 4px;
+}
+.thumbnail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.coaches{
+    display:flex;
+    justify-content: center;
+    margin-top: 15px;
+
+}
+.advisoryboard{
+    display:flex;
+    justify-content: center;
+    margin-top: 15px;
 }
